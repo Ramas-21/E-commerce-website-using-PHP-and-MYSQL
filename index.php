@@ -40,7 +40,7 @@
                             <a class="nav-link" href="#">Cart</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Total Price:</a>
+                            <a class="nav-link" href="#">Total Price:100/-</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
