@@ -37,7 +37,7 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cart</a>
+                            <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Total Price:100/-</a>
