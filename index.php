@@ -18,7 +18,7 @@
         <!------first child---->
         <nav class="navbar navbar-expand-lg bg-info">
             <div class="container-fluid">
-                <img src="./images/istockphoto-1437990859-1024x1024.jpg" alt="#">
+                <img src="./images/istockphoto-1437990859-1024x1024.jpg" alt="#" class="logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
