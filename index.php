@@ -51,6 +51,11 @@
                 </div>
             </div>
         </nav>
+
+        <!---------------------- footer ------------------>
+        <div class="bg-info">
+            <p>All rights reserved | Designed by Lawrence-2023</p>
+        </div>
     </div>
 
 
