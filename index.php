@@ -72,6 +72,16 @@
         </div>
 
 
+        <div class="row">
+            <div class="col md-10">
+                <!---------- products ----------->
+            </div>
+            <div class="col md-2">
+                <!---------sidenav--------------->
+            </div>
+        </div>
+
+
 
 
 
