@@ -52,6 +52,24 @@
             </div>
         </nav>
 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Welcome Guest</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
         <!---------------------- footer ------------------>
         <!------------
         <div class="bg-info p-3 text-center">
