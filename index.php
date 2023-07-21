@@ -166,6 +166,27 @@
                         <a href="#" class="nav-link text-light">Brand5</a>
                     </li>
                 </ul>
+
+                <ul class="navbar-nav me-auto text-center">
+                    <li class="nav-item bg-info">
+                        <a href="#" class="nav-link text-light"><h6>Categories</h6></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Category1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Category2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Category3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Category4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light">Category5</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
