@@ -8,6 +8,7 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="../style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .admin-image {
             width: 100px;
@@ -51,7 +52,7 @@
                 <div class="button text-center">
                     <button class="my-3"><a href="" class="nav-link text-light bg-info my-1">Insert products</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1">View products</a></button>
-                    <button><a href="insert_categories.php" class="nav-link text-light bg-info my-1">Insert categories</a></button>
+                    <button><a href="index.php?insert_category" class="nav-link text-light bg-info my-1">Insert categories</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1">View categories</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1">Insert brands</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1">View brands</a></button>
@@ -61,6 +62,15 @@
                     <button><a href="" class="nav-link text-light bg-info my-1">Logout</a></button>
                 </div>
             </div>
+        </div>
+
+
+        <div class="container my-5">
+            <?php
+            if(isset($_GET['insert_category'])){
+                include('insert_categories.php');
+            }
+            ?>
         </div>
         <!---------------------- footer ------------------>
         <div class="bg-info p-3 text-center footer">
