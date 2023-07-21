@@ -78,7 +78,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="./images/istockphoto-1132357230-1024x1024.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="./images/pair-classic-leather-elegant-men-s-shoes-isolated-white-background-groom-s-stylish-black-shoes-isolated-object-close-up-white-background_120962-4457.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                            <img src="./images/pile-of-nike-air-jordan-basketball-sneakers-on-white-background-J4RYA8.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
