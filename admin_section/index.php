@@ -51,7 +51,7 @@
                 <div class="button text-center">
                     <button class="my-3"><a href="" class="nav-link text-light bg-info my-1">Insert products</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1">View products</a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1">Insert categories</a></button>
+                    <button><a href="insert_categories.php" class="nav-link text-light bg-info my-1">Insert categories</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1">View categories</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1">Insert brands</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1">View brands</a></button>
