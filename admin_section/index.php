@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="../style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <style>
-        .admin-image{
+        .admin-image {
             width: 100px;
             object-fit: contain;
+        }
+        .footer{
+            position: absolute;
+            bottom: 0;
         }
     </style>
 </head>
@@ -39,24 +43,28 @@
 
 
         <div class="row">
-            <div class="col-md-12 bg-secondary p-1">
-                <div>
+            <div class="col-md-12 bg-secondary p-1 d-flex align-items-center">
+                <div class="p-3">
                     <a href="#"><img src="../images/istockphoto-1437990859-1024x1024.jpg" alt="" class="admin-image"></a>
                     <p class="text-light text-center">Admin name</p>
                 </div>
                 <div class="button text-center">
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1"></a></button>
+                    <button class="my-3"><a href="" class="nav-link text-light bg-info my-1">Insert products</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">View products</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">Insert categories</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">View categories</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">Insert brands</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">View brands</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">All orders</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">All payments</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">Users's List</a></button>
+                    <button><a href="" class="nav-link text-light bg-info my-1">Logout</a></button>
                 </div>
             </div>
+        </div>
+        <!---------------------- footer ------------------>
+        <div class="bg-info p-3 text-center footer">
+            <p>All rights reserved | Designed by Lawrence-2023</p>
         </div>
     </div>
 
