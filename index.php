@@ -144,11 +144,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 bg-secondary">
+            <div class="col-md-2 bg-secondary p-0">
                 <!---------sidenav--------------->
-                <ul class="navbar-nav me-auto">
+                <ul class="navbar-nav me-auto text-center">
                     <li class="nav-item bg-info">
-                        <a href="#" class="nav link">Delivery Brands</a>
+                        <a href="#" class="nav-link text-light"><h6>Delivery Brands</h6></a>
                     </li>
                 </ul>
             </div>
