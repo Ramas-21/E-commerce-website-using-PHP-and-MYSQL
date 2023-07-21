@@ -54,7 +54,7 @@
                     <button><a href="" class="nav-link text-light bg-info my-1">View products</a></button>
                     <button><a href="index.php?insert_category" class="nav-link text-light bg-info my-1">Insert categories</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1">View categories</a></button>
-                    <button><a href="" class="nav-link text-light bg-info my-1">Insert brands</a></button>
+                    <button><a href="index.php?insert_brands" class="nav-link text-light bg-info my-1">Insert brands</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1">View brands</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1">All orders</a></button>
                     <button><a href="" class="nav-link text-light bg-info my-1">All payments</a></button>
@@ -69,6 +69,9 @@
             <?php
             if(isset($_GET['insert_category'])){
                 include('insert_categories.php');
+            }
+            if(isset($_GET['insert_brands'])){
+                include('insert_brands.php');
             }
             ?>
         </div>
