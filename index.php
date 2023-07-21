@@ -144,8 +144,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 bg-secondary">
                 <!---------sidenav--------------->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item bg-info">
+                        <a href="#" class="nav link">Delivery Brands</a>
+                    </li>
+                </ul>
             </div>
         </div>
 
