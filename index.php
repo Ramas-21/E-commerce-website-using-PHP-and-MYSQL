@@ -86,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-2">
                         <div class="card">
                             <img src="./images/istockphoto-1132357230-1024x1024.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-2">
                         <div class="card">
                             <img src="./images/istockphoto-1132357230-1024x1024.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-2">
                         <div class="card">
                             <img src="./images/istockphoto-1132357230-1024x1024.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-2">
                         <div class="card">
                             <img src="./images/istockphoto-1132357230-1024x1024.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -126,7 +126,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-2">
                         <div class="card">
                             <img src="./images/istockphoto-1132357230-1024x1024.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
