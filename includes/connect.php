@@ -2,10 +2,7 @@
 
 $connect = mysqli_connect('localhost','root','','myStore');
 
-if($connect){
-    echo "connection successful";
-}
-else {
+if(!$connect){
     die(mysqli_error($connect));
 }
 ?>
