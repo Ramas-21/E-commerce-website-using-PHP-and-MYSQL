@@ -1,11 +1,16 @@
 <?php
 include('../includes/connect.php');
+if(isset($_POST['insert_cat'])){
+    $category_title = $_POST['category'];
 
+    $insert_query = "INSERT INTO `categories` (category) VALUES('$category_title')";
+    $result = mysqli_query($connect,$insert_query);
+    if($result){
+        echo "<script>alert('Category has been inserted successfully')</script>";
+    }
 
-
+}
 ?>
-
-
 
 <form action="#" method="post" class="mb-2">
     <div class="input-group w-90 mb-2">
