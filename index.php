@@ -152,18 +152,22 @@ include('includes/connect.php');
                 <!---------sidenav--------------->
                 <ul class="navbar-nav me-auto text-center">
                     <li class="nav-item bg-info">
-                        <a href="#" class="nav-link text-light"><h6>Delivery Brands</h6></a>
+                        <a href="#" class="nav-link text-light">
+                            <h6>Delivery Brands</h6>
+                        </a>
                     </li>
 
                     <?php
                     $select_brands = "SELECT * FROM `brands`";
-                    $result_brands = mysqli_query($connect,$select_brands);
+                    $result_brands = mysqli_query($connect, $select_brands);
                     // $row_data = mysqli_fetch_assoc($result_brands);
                     // echo $row_data['brand_title'];
-                    while($row_data = mysqli_fetch_assoc($result_brands)){
+                    while ($row_data = mysqli_fetch_assoc($result_brands)) {
                         $brand_title = $row_data['brand_title'];
                         $brand_id = $row_data['brands_id'];
-                        echo "";
+                        echo " <li class='nav-item'>
+                        <a href='#' class='nav-link text-light'>Brand1</a>
+                    </li>";
                     }
                     ?>
 
@@ -186,7 +190,9 @@ include('includes/connect.php');
 
                 <ul class="navbar-nav me-auto text-center">
                     <li class="nav-item bg-info">
-                        <a href="#" class="nav-link text-light"><h6>Categories</h6></a>
+                        <a href="#" class="nav-link text-light">
+                            <h6>Categories</h6>
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link text-light">Category1</a>
