@@ -170,22 +170,6 @@ include('includes/connect.php');
                     </li>";
                     }
                     ?>
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Brand1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Brand2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Brand3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Brand4</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Brand5</a>
-                    </li>
                 </ul>
 
                 <ul class="navbar-nav me-auto text-center">
