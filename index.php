@@ -158,8 +158,13 @@ include('includes/connect.php');
                     <?php
                     $select_brands = "SELECT * FROM `brands`";
                     $result_brands = mysqli_query($connect,$select_brands);
-                    $row_data = mysqli_fetch_assoc($result_brands);
-                    echo $row_data['brand_title'];
+                    // $row_data = mysqli_fetch_assoc($result_brands);
+                    // echo $row_data['brand_title'];
+                    while($row_data = mysqli_fetch_assoc($result_brands)){
+                        $brand_title = $row_data['brand_title'];
+                        $brand_id = $row_data['brand_id'];
+                        echo  $brand_title;
+                    }
                     ?>
 
                     <li class="nav-item">
