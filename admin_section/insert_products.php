@@ -58,6 +58,11 @@
                 <label for="product_image2" class="form-label">Product image 2</label>
                 <input type="file" name="product_image2" id="product_image2" class="form-control" required>
             </div>
+
+            <div class="form-outline mb-4 w-50 m-auto">
+                <label for="product_image3" class="form-label">Product image 3</label>
+                <input type="file" name="product_image3" id="product_image3" class="form-control" required>
+            </div>
         </form>
     </div>
 </body>
