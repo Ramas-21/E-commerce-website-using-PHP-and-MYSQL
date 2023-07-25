@@ -178,21 +178,6 @@ include('includes/connect.php');
                             <h6>Categories</h6>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Category1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Category2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Category3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Category4</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Category5</a>
-                    </li>
                 </ul>
             </div>
         </div>
