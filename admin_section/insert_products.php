@@ -50,8 +50,13 @@
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
-                <label for="product_image" class="form-label">Product image 1</label>
-                <input type="file" name="product_image1" id="product_image" class="form-control" required>
+                <label for="product_image1" class="form-label">Product image 1</label>
+                <input type="file" name="product_image1" id="product_image1" class="form-control" required>
+            </div>
+
+            <div class="form-outline mb-4 w-50 m-auto">
+                <label for="product_image2" class="form-label">Product image 2</label>
+                <input type="file" name="product_image2" id="product_image2" class="form-control" required>
             </div>
         </form>
     </div>
