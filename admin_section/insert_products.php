@@ -28,6 +28,16 @@
                 <label for="product_keyword" class="form-label">Product keyword</label>
                 <input type="text" name="keyword" id="product_keyword" class="form-control" placeholder="Enter product keyword" autocomplete="off" required>
             </div>
+
+            <div class="form-outline mb-4 w-50 m-auto">
+                <select name="product_category" id="#" class="form-select">
+                    <option value="#">Select category</option>
+                    <option value="#">category1</option>
+                    <option value="#">category2</option>
+                    <option value="#">category3</option>
+                    <option value="#">category4</option>
+                </select>
+            </div>
         </form>
     </div>
 </body>
