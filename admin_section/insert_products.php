@@ -68,6 +68,10 @@
                 <label for="product_price" class="form-label">Product price</label>
                 <input type="text" name="product_price" id="product_price" class="form-control" placeholder="Enter product price" autocomplete="off" required>
             </div>
+
+            <div class="form-outline mb-4 w-50 m-auto">
+                <input type="submit" name="insert_product" value="Submit" class="btn btn-info">
+            </div>
         </form>
     </div>
 </body>
