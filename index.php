@@ -178,6 +178,20 @@ include('includes/connect.php');
                             <h6>Categories</h6>
                         </a>
                     </li>
+
+                    <?php
+                    $select_categories = "SELECT * FROM `categories`";
+                    $result_categories = mysqli_query($connect, $select_categories);
+                    // $row_data = mysqli_fetch_assoc($result_brands);
+                    // echo $row_data['brand_title'];
+                    while ($row_data = mysqli_fetch_assoc($result_categories)) {
+                        $category_title = $row_data['category'];
+                        $category_id = $row_data['category_id'];
+                        echo " <li class='nav-item'>
+                        <a href='index.php?category=$category_id' class='nav-link text-light'>$category_title</a>
+                    </li>";
+                    }
+                    ?>
                 </ul>
             </div>
         </div>
