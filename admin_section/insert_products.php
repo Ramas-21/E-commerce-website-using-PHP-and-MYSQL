@@ -48,6 +48,11 @@
                     <option value="#">brands4</option>
                 </select>
             </div>
+
+            <div class="form-outline mb-4 w-50 m-auto">
+                <label for="product_image" class="form-label">Product image 1</label>
+                <input type="file" name="product_image1" id="product_image" class="form-control" required>
+            </div>
         </form>
     </div>
 </body>
