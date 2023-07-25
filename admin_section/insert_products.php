@@ -70,7 +70,7 @@
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
-                <input type="submit" name="insert_product" value="Submit" class="btn btn-info">
+                <input type="submit" name="insert_product" value="Submit" class="btn btn-info mb-3 px-3">
             </div>
         </form>
     </div>
