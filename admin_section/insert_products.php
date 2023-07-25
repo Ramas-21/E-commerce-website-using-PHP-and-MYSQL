@@ -23,6 +23,11 @@
                 <label for="product_description" class="form-label">Product Description</label>
                 <input type="text" name="description" id="product_description" class="form-control" placeholder="Enter product description" autocomplete="off" required>
             </div>
+
+            <div class="form-outline mb-4 w-50 m-auto">
+                <label for="product_keyword" class="form-label">Product keyword</label>
+                <input type="text" name="keyword" id="product_keyword" class="form-control" placeholder="Enter product keyword" autocomplete="off" required>
+            </div>
         </form>
     </div>
 </body>
