@@ -8,9 +8,9 @@ if(isset($_POST['insert_product'])){
     $product_category = $_POST['product_category'];
     $product_brands = $_POST['product_brands'];
     // Accessing images
-    $product_name = $_POST['product_name'];
-    $product_name = $_POST['product_name'];
-    $product_name = $_POST['product_name'];
+    $product_image1 = $_POST['product_image1']['name'];
+    $product_image2 = $_POST['product_image2']['name'];
+    $product_image3 = $_POST['product_image3']['name'];
 
     $product_price = $_POST['product_price'];
 }
