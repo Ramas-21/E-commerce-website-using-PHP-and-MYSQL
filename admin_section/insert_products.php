@@ -38,7 +38,9 @@ include('../includes/connect.php');
                     <?php
                     $select_query = "SELECT * FROM `categories`";
                     $result_query = mysqli_query($connect,$select_query);
-
+                    while($row = mysqli_fetch_assoc($result_query)){
+                        
+                    }
                     ?>
                     <option value="#">category1</option>
                     <option value="#">category2</option>
