@@ -37,8 +37,8 @@ include('../includes/connect.php');
                     <option value="#">Select category</option>
                     <?php
                     $select_query = "SELECT * FROM `categories`";
-                    $result_query = mysqli_query($connect,$select_query);
-                    while($row = mysqli_fetch_assoc($result_query)){
+                    $result_query = mysqli_query($connect, $select_query);
+                    while ($row = mysqli_fetch_assoc($result_query)) {
                         $category_title = $row['category'];
                         $category_id = $row['category_id'];
                         echo "<option value='$category_id'> $category_title</option>";
@@ -56,10 +56,15 @@ include('../includes/connect.php');
             <div class="form-outline mb-4 w-50 m-auto">
                 <select name="product_brands" id="#" class="form-select">
                     <option value="#">Select brands</option>
-                    <option value="#">brands1</option>
-                    <option value="#">brands2</option>
-                    <option value="#">brands3</option>
-                    <option value="#">brands4</option>
+                    <?php
+                    $select_query = "SELECT * FROM `brands`";
+                    $result_query = mysqli_query($connect, $select_query);
+                    while ($row = mysqli_fetch_assoc($result_query)) {
+                        $brand_title = $row['brand_title'];
+                        $brand_id = $row['brand_id'];
+                        echo "<option value='$brand_id'> $brand_title</option>";
+                    }
+                    ?>
                 </select>
             </div>
 
