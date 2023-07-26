@@ -7,10 +7,19 @@ if(isset($_POST['insert_product'])){
     $product_keyword = $_POST['product_keyword'];
     $product_category = $_POST['product_category'];
     $product_brands = $_POST['product_brands'];
+
     // Accessing images
+
     $product_image1 = $_POST['product_image1']['name'];
     $product_image2 = $_POST['product_image2']['name'];
     $product_image3 = $_POST['product_image3']['name'];
+
+    // Accessing image temporarily name
+
+    $product_image1 = $_POST['product_image1']['tmp_name'];
+    $product_image2 = $_POST['product_image2']['tmp_name'];
+    $product_image3 = $_POST['product_image3']['tmp_name'];
+
 
     $product_price = $_POST['product_price'];
 }
