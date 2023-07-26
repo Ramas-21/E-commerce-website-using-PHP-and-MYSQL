@@ -29,7 +29,7 @@ include('../includes/connect.php');
 
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="product_keyword" class="form-label">Product keyword</label>
-                <input type="text" name="keyword" id="product_keyword" class="form-control" placeholder="Enter product keyword" autocomplete="off" required>
+                <input type="text" name="product_keyword" id="product_keyword" class="form-control" placeholder="Enter product keyword" autocomplete="off" required>
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
