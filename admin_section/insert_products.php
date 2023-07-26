@@ -3,6 +3,16 @@ include('../includes/connect.php');
 
 if(isset($_POST['insert_product'])){
     $product_name = $_POST['product_name'];
+    $product_description = $_POST['product_description'];
+    $product_keyword = $_POST['product_keyword'];
+    $product_category = $_POST['product_category'];
+    $product_brands = $_POST['product_brands'];
+    // Accessing images
+    $product_name = $_POST['product_name'];
+    $product_name = $_POST['product_name'];
+    $product_name = $_POST['product_name'];
+
+    $product_price = $_POST['product_price'];
 }
 ?>
 <!doctype html>
