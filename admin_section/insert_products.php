@@ -20,7 +20,6 @@ if(isset($_POST['insert_product'])){
     $product_image2 = $_POST['product_image2']['tmp_name'];
     $product_image3 = $_POST['product_image3']['tmp_name'];
 
-
     $product_price = $_POST['product_price'];
 }
 ?>
