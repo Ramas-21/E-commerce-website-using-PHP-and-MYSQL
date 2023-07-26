@@ -24,7 +24,7 @@ include('../includes/connect.php');
 
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="product_description" class="form-label">Product Description</label>
-                <input type="text" name="description" id="product_description" class="form-control" placeholder="Enter product description" autocomplete="off" required>
+                <input type="text" name="product_description" id="product_description" class="form-control" placeholder="Enter product description" autocomplete="off" required>
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
