@@ -1,5 +1,9 @@
 <?php
 include('../includes/connect.php');
+
+if(isset($_POST['insert_product'])){
+    $product_name = $_POST['product_name'];
+}
 ?>
 <!doctype html>
 <html lang="en">
