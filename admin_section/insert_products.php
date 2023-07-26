@@ -41,12 +41,15 @@ include('../includes/connect.php');
                     while($row = mysqli_fetch_assoc($result_query)){
                         $category_title = $row['category'];
                         $category_id = $row['category_id'];
+                        echo "<option value='$category_id'> $category_title</option>";
                     }
                     ?>
+                    <!-----
                     <option value="#">category1</option>
                     <option value="#">category2</option>
                     <option value="#">category3</option>
                     <option value="#">category4</option>
+                    ----->
                 </select>
             </div>
 
