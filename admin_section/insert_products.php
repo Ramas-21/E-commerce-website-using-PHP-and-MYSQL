@@ -37,6 +37,9 @@ if(isset($_POST['insert_product'])){
         VALUES ('$product_name','$product_description','$product_keyword','$product_category','$product_brands','$product_image1','$product_image2','$product_image3','$product_price',NOW(),'$product_status')";
 
         $result_query = mysqli_query($connect,$insert_products);
+        if($result_query){
+            echo "<script>alert('Products are successfully inserted')</script>";
+        }
     }
 
 }
