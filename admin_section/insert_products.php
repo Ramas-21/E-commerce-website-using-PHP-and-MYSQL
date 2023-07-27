@@ -23,7 +23,12 @@ if(isset($_POST['insert_product'])){
     $product_price = $_POST['product_price'];
 
     // checkin empty condition
-    if($product_name=='' or $product_description=='' or $product_keyword=='' or $product_category=='' or $product_brands=='' or $product_price=='' or )
+    if($product_name=='' or $product_description=='' or $product_keyword=='' or $product_category=='' or $product_brands=='' or $product_price=='' or $product_image1=='' or $product_image2=='' or $product_image3==''){
+        echo "<script>alert('Please fill all the fields')</script>";
+        exit();
+    }else{
+        
+    }
 
 }
 ?>
