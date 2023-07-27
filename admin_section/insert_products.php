@@ -21,6 +21,7 @@ if(isset($_POST['insert_product'])){
     $temp_image3 = $_POST['product_image3']['tmp_name'];
 
     $product_price = $_POST['product_price'];
+    $product_status = 'true';
 
     // checkin empty condition
     if($product_name=='' or $product_description=='' or $product_keyword=='' or $product_category=='' or $product_brands=='' or $product_price=='' or $product_image1=='' or $product_image2=='' or $product_image3==''){
@@ -30,6 +31,10 @@ if(isset($_POST['insert_product'])){
         move_uploaded_file($temp_image1,"./product_images/$product_image1");
         move_uploaded_file($temp_image2,"./product_images/$product_image2");
         move_uploaded_file($temp_image3,"./product_images/$product_image3");
+
+        //  insert query
+        $insert_product = "INSERT INTO `products`(product_name,product_description,product_keyword,category_id,brand_id,product_image1,product_image2,product_image3,product_price,date,status)
+        VALUES ('$product_name','$product_description','$product_keyword','$product_category','$product_brands','$product_image1','$product_image2','$product_image3','$product_price',NOW(),'$product_status')";
     }
 
 }
