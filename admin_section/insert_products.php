@@ -16,11 +16,15 @@ if(isset($_POST['insert_product'])){
 
     // Accessing image temporarily name
 
-    $product_image1 = $_POST['product_image1']['tmp_name'];
-    $product_image2 = $_POST['product_image2']['tmp_name'];
-    $product_image3 = $_POST['product_image3']['tmp_name'];
+    $temp_image1 = $_POST['product_image1']['tmp_name'];
+    $temp_image2 = $_POST['product_image2']['tmp_name'];
+    $temp_image3 = $_POST['product_image3']['tmp_name'];
 
     $product_price = $_POST['product_price'];
+
+    // checkin empty condition
+    if($product_name=='' or $product_description=='' or $product_keyword=='' or $product_category=='' or $product_brands=='' or $product_price=='' or )
+
 }
 ?>
 <!doctype html>
