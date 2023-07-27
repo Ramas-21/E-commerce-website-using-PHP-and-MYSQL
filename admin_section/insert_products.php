@@ -35,6 +35,8 @@ if(isset($_POST['insert_product'])){
         //  insert query
         $insert_product = "INSERT INTO `products`(product_name,product_description,product_keyword,category_id,brand_id,product_image1,product_image2,product_image3,product_price,date,status)
         VALUES ('$product_name','$product_description','$product_keyword','$product_category','$product_brands','$product_image1','$product_image2','$product_image3','$product_price',NOW(),'$product_status')";
+
+        $re
     }
 
 }
