@@ -33,10 +33,10 @@ if(isset($_POST['insert_product'])){
         move_uploaded_file($temp_image3,"./product_images/$product_image3");
 
         //  insert query
-        $insert_product = "INSERT INTO `products`(product_name,product_description,product_keyword,category_id,brand_id,product_image1,product_image2,product_image3,product_price,date,status)
+        $insert_products = "INSERT INTO `products`(product_name,product_description,product_keyword,category_id,brand_id,product_image1,product_image2,product_image3,product_price,date,status)
         VALUES ('$product_name','$product_description','$product_keyword','$product_category','$product_brands','$product_image1','$product_image2','$product_image3','$product_price',NOW(),'$product_status')";
 
-        $re
+        $result_query = mysqli_query($connect,$insert_products);
     }
 
 }
