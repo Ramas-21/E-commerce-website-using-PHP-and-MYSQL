@@ -62,17 +62,17 @@ if(isset($_POST['insert_product'])){
         <form action="#" method="post" enctype="multipart/form-data">
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="product_title" class="form-label">Product Name</label>
-                <input type="text" name="product_name" id="product_title" class="form-control" placeholder="Enter product name" autocomplete="off" required>
+                <input type="text" name="product_name" id="product_title" class="form-control" placeholder="Enter product name" autocomplete="off">
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="product_description" class="form-label">Product Description</label>
-                <input type="text" name="product_description" id="product_description" class="form-control" placeholder="Enter product description" autocomplete="off" required>
+                <input type="text" name="product_description" id="product_description" class="form-control" placeholder="Enter product description" autocomplete="off">
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="product_keyword" class="form-label">Product keyword</label>
-                <input type="text" name="product_keyword" id="product_keyword" class="form-control" placeholder="Enter product keyword" autocomplete="off" required>
+                <input type="text" name="product_keyword" id="product_keyword" class="form-control" placeholder="Enter product keyword" autocomplete="off">
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
@@ -113,22 +113,22 @@ if(isset($_POST['insert_product'])){
 
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="product_image1" class="form-label">Product image 1</label>
-                <input type="file" name="product_image1" id="product_image1" class="form-control" required>
+                <input type="file" name="product_image1" id="product_image1" class="form-control">
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="product_image2" class="form-label">Product image 2</label>
-                <input type="file" name="product_image2" id="product_image2" class="form-control" required>
+                <input type="file" name="product_image2" id="product_image2" class="form-control">
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="product_image3" class="form-label">Product image 3</label>
-                <input type="file" name="product_image3" id="product_image3" class="form-control" required>
+                <input type="file" name="product_image3" id="product_image3" class="form-control">
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
                 <label for="product_price" class="form-label">Product price</label>
-                <input type="text" name="product_price" id="product_price" class="form-control" placeholder="Enter product price" autocomplete="off" required>
+                <input type="text" name="product_price" id="product_price" class="form-control" placeholder="Enter product price" autocomplete="off">
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
