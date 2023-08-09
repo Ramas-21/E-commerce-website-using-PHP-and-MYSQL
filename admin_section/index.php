@@ -14,7 +14,8 @@
             width: 100px;
             object-fit: contain;
         }
-        .footer{
+
+        .footer {
             position: absolute;
             bottom: 0;
         }
@@ -67,10 +68,10 @@
 
         <div class="container my-3">
             <?php
-            if(isset($_GET['insert_category'])){
+            if (isset($_GET['insert_category'])) {
                 include('insert_categories.php');
             }
-            if(isset($_GET['insert_brands'])){
+            if (isset($_GET['insert_brands'])) {
                 include('insert_brands.php');
             }
             ?>
