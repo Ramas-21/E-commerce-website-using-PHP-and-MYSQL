@@ -24,7 +24,7 @@ if (isset($_POST['insert_product'])) {
     $product_status = 'true';
 
     // checkin empty condition
-    if ($product_name == '' or $product_description == '' or $product_keyword == '' or $product_category == '' or $product_brands == '' or $product_price == '' or $product_image1 == '' or $product_image2 == '' or $product_image3 == '') {
+    if ($product_name == '' or $product_description == '' or $product_keyword == '' or $product_category == '' or $product_brands == '' or $product_image1 == '' or $product_image2 == '' or $product_image3 == '' or $product_price == '') {
         echo "<script>alert('Please fill all the fields')</script>";
         exit();
     } else {
@@ -33,7 +33,7 @@ if (isset($_POST['insert_product'])) {
         move_uploaded_file($temp_image3, "./product_images/$product_image3");
 
         //  insert query
-        $insert_products = "INSERT INTO `products`(product_name,product_description,product_keyword,category_id,brand_id,product_image1,product_image2,product_image3,product_price,date,status)
+        $insert_products = "INSERT INTO `products`(product_name,product_description,product_keyword,category_id,brands_id,product_image1,product_image2,product_image3,product_price,date,status)
         VALUES ('$product_name','$product_description','$product_keyword','$product_category','$product_brands','$product_image1','$product_image2','$product_image3','$product_price',NOW(),'$product_status')";
 
         $result_query = mysqli_query($connect, $insert_products);
@@ -75,7 +75,7 @@ if (isset($_POST['insert_product'])) {
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
-                <select name="product_category" id="#" class="form-select">
+                <select name="category_id" id="#" class="form-select">
                     <option value="#">Select category</option>
                     <?php
                     $select_query = "SELECT * FROM `categories`";
@@ -96,14 +96,14 @@ if (isset($_POST['insert_product'])) {
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
-                <select name="product_brands" id="#" class="form-select">
+                <select name="brands_id" id="#" class="form-select">
                     <option value="#">Select brands</option>
                     <?php
                     $select_query = "SELECT * FROM `brands`";
                     $result_query = mysqli_query($connect, $select_query);
                     while ($row = mysqli_fetch_assoc($result_query)) {
                         $brand_title = $row['brand_title'];
-                        $brand_id = $row['brand_id'];
+                        $brand_id = $row['brands_id'];
                         echo "<option value='$brands_id'>$brand_title</option>";
                     }
                     ?>
