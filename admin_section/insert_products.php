@@ -5,8 +5,8 @@ if (isset($_POST['insert_product'])) {
     $product_name = $_POST['product_name'];
     $product_description = $_POST['product_description'];
     $product_keyword = $_POST['product_keyword'];
-    $product_category = $_POST['category_id'];
-    $product_brands = $_POST['brands_id'];
+    $product_category = $_POST['product_category'];
+    $product_brands = $_POST['product_brands'];
 
     // Accessing images
 
@@ -24,7 +24,7 @@ if (isset($_POST['insert_product'])) {
     $product_status = 'true';
 
     // checkin empty condition
-    if ($product_name == '' or $product_description == '' or $product_keyword == '' or $product_category == '' or $product_brands == '' or $product_image1 == '' or $product_image2 == '' or $product_image3 == '' or $product_price == '') {
+    if($product_name=='' or $product_description=='' or $product_keyword=='' or $product_category=='' or $product_brands=='' or $product_price=='' or $product_image1=='' or $product_image2=='' or $product_image3=='') {
         echo "<script>alert('Please fill all the fields')</script>";
         exit();
     } else {
@@ -75,7 +75,7 @@ if (isset($_POST['insert_product'])) {
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
-                <select name="product_categories" id="#" class="form-select">
+                <select name="product_category" id="#" class="form-select">
                     <option value="#">Select category</option>
                     <?php
                     $select_query = "SELECT * FROM `categories`";
@@ -103,7 +103,7 @@ if (isset($_POST['insert_product'])) {
                     $result_query = mysqli_query($connect, $select_query);
                     while ($row = mysqli_fetch_assoc($result_query)) {
                         $brand_title = $row['brand_title'];
-                        $brand_id = $row['brands_id'];
+                        $brands_id = $row['brands_id'];
                         echo "<option value='$brands_id'>$brand_title</option>";
                     }
                     ?>
