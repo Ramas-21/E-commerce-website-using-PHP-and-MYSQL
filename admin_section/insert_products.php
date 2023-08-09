@@ -6,7 +6,7 @@ if (isset($_POST['insert_product'])) {
     $product_description = $_POST['product_description'];
     $product_keyword = $_POST['product_keyword'];
     $product_category = $_POST['category_id'];
-    $product_brands = $_POST['brand_id'];
+    $product_brands = $_POST['brands_id'];
 
     // Accessing images
 
@@ -83,7 +83,7 @@ if (isset($_POST['insert_product'])) {
                     while ($row = mysqli_fetch_assoc($result_query)) {
                         $category_title = $row['category'];
                         $category_id = $row['category_id'];
-                        echo "<option value='$category_id'> $category_title</option>";
+                        echo "<option value='$category_id'>$category_title</option>";
                     }
                     ?>
                     <!-----
@@ -104,7 +104,7 @@ if (isset($_POST['insert_product'])) {
                     while ($row = mysqli_fetch_assoc($result_query)) {
                         $brand_title = $row['brand_title'];
                         $brand_id = $row['brand_id'];
-                        echo "<option value='$brand_id'> $brand_title</option>";
+                        echo "<option value='$brands_id'>$brand_title</option>";
                     }
                     ?>
                 </select>
