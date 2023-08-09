@@ -75,7 +75,7 @@ if (isset($_POST['insert_product'])) {
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
-                <select name="category_id" id="#" class="form-select">
+                <select name="product_categories" id="#" class="form-select">
                     <option value="#">Select category</option>
                     <?php
                     $select_query = "SELECT * FROM `categories`";
@@ -96,7 +96,7 @@ if (isset($_POST['insert_product'])) {
             </div>
 
             <div class="form-outline mb-4 w-50 m-auto">
-                <select name="brands_id" id="#" class="form-select">
+                <select name="product_brands" id="#" class="form-select">
                     <option value="#">Select brands</option>
                     <?php
                     $select_query = "SELECT * FROM `brands`";
