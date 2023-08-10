@@ -90,11 +90,12 @@ include('includes/connect.php');
                         $product_id = $row['product_id'];
                         $product_name = $row['product_name'];
                         $product_description = $row['product_description'];
-                        $product_keyword = $row['product_keyword'];
                         $product_image1 = $row['product_image1'];
                         $product_image2 = $row['product_image2'];
                         $product_image3 = $row['product_image3'];
                         $product_price = $row['product_price'];
+                        $category_id = $row['category_id'];
+                        $brand_id = $row['brands_id'];
                     }
                     ?>
                     <div class="col-md-4 mb-2">
