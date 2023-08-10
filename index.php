@@ -84,8 +84,11 @@ include('includes/connect.php');
                     <?php
                     $select_query = "SELECT * FROM `products`";
                     $result_query = mysqli_query($connect, $select_query);
-                    $row = mysqli_fetch_assoc($result_query);
-                    echo $row['product_name'];
+                    // $row = mysqli_fetch_assoc($result_query);
+                    // echo $row['product_name'];
+                    while($row = mysqli_fetch_assoc($result_query)){
+                        
+                    }
                     ?>
                     <div class="col-md-4 mb-2">
                         <div class="card">
