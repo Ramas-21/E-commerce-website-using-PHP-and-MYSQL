@@ -97,10 +97,20 @@ include('includes/connect.php');
                         $category_id = $row['category_id'];
                         $brand_id = $row['brands_id'];
 
-                        echo $product_name;
-                        echo "<br>";
+                        echo "<div class='col-md-4 mb-2'>
+                        <div class='card'>
+                            <img src='./images/istockphoto-1132357230-1024x1024.jpg' class='card-img-top' alt='...'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>Card title</h5>
+                                <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href='#' class='btn btn-info'>Add to cart</a>
+                                <a href='#' class='btn btn-secondary'>View More</a>
+                            </div>
+                        </div>
+                    </div>";
                     }
                     ?>
+                    <!----------------------
                     <div class="col-md-4 mb-2">
                         <div class="card">
                             <img src="./images/istockphoto-1132357230-1024x1024.jpg" class="card-img-top" alt="...">
@@ -112,6 +122,7 @@ include('includes/connect.php');
                             </div>
                         </div>
                     </div>
+                    ------------------------------->
                 </div>
             </div>
             <div class="col-md-2 bg-secondary p-0">
