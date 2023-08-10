@@ -97,6 +97,9 @@ include('includes/connect.php');
                         $category_id = $row['category_id'];
                         $brand_id = $row['brands_id'];
 
+                        /* After copy pasting the code for card in the echo statement 
+                        replace the double quotes with single quotes
+                        */
                         echo "<div class='col-md-4 mb-2'>
                         <div class='card'>
                             <img src='./images/istockphoto-1132357230-1024x1024.jpg' class='card-img-top' alt='...'>
