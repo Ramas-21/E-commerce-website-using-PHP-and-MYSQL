@@ -96,6 +96,9 @@ include('includes/connect.php');
                         $product_price = $row['product_price'];
                         $category_id = $row['category_id'];
                         $brand_id = $row['brands_id'];
+
+                        echo $product_name;
+                        echo "<br>";
                     }
                     ?>
                     <div class="col-md-4 mb-2">
