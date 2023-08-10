@@ -104,7 +104,7 @@ include('includes/connect.php');
                         <div class='card'>
                             <img src='./images/istockphoto-1132357230-1024x1024.jpg' class='card-img-top' alt='...'>
                             <div class='card-body'>
-                                <h5 class='card-title'>Card title</h5>
+                                <h5 class='card-title'>$product_name</h5>
                                 <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href='#' class='btn btn-info'>Add to cart</a>
                                 <a href='#' class='btn btn-secondary'>View More</a>
