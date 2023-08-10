@@ -76,10 +76,17 @@ include('includes/connect.php');
         </div>
 
 
-        <div class="row">
+        <div class="row px-3">
             <div class="col-md-10">
                 <!---------- products ----------->
                 <div class="row">
+                    <!----------- fetching products ------------->
+                    <?php
+                    $select_query = "SELECT * FROM `products`";
+                    $result_query = mysqli_query($connect, $select_query);
+                    $row = mysqli_fetch_assoc($result_query);
+                    echo $row['product_name'];
+                    ?>
                     <div class="col-md-4 mb-2">
                         <div class="card">
                             <img src="./images/istockphoto-1132357230-1024x1024.jpg" class="card-img-top" alt="...">
@@ -91,7 +98,6 @@ include('includes/connect.php');
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
             <div class="col-md-2 bg-secondary p-0">
