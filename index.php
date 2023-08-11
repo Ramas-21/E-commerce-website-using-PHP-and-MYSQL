@@ -97,9 +97,6 @@ include('includes/connect.php');
                         $category_id = $row['category_id'];
                         $brand_id = $row['brands_id'];
 
-                        /* After copy pasting the code for card in the echo statement 
-                        replace the double quotes with single quotes
-                        */
                         echo "<div class='col-md-4 mb-2'>
                         <div class='card'>
                             <img src='./admin_section/product_images/$product_image1' class='card-img-top' alt='$product_name'>
@@ -113,19 +110,6 @@ include('includes/connect.php');
                     </div>";
                     }
                     ?>
-                    <!----------------------
-                    <div class="col-md-4 mb-2">
-                        <div class="card">
-                            <img src="./images/istockphoto-1132357230-1024x1024.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-info">Add to cart</a>
-                                <a href="#" class="btn btn-secondary">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                    ------------------------------->
                 </div>
             </div>
             <div class="col-md-2 bg-secondary p-0">
@@ -140,8 +124,7 @@ include('includes/connect.php');
                     <?php
                     $select_brands = "SELECT * FROM `brands`";
                     $result_brands = mysqli_query($connect, $select_brands);
-                    // $row_data = mysqli_fetch_assoc($result_brands);
-                    // echo $row_data['brand_title'];
+
                     while ($row_data = mysqli_fetch_assoc($result_brands)) {
                         $brand_title = $row_data['brand_title'];
                         $brand_id = $row_data['brands_id'];
@@ -162,8 +145,7 @@ include('includes/connect.php');
                     <?php
                     $select_categories = "SELECT * FROM `categories`";
                     $result_categories = mysqli_query($connect, $select_categories);
-                    // $row_data = mysqli_fetch_assoc($result_brands);
-                    // echo $row_data['brand_title'];
+                    
                     while ($row_data = mysqli_fetch_assoc($result_categories)) {
                         $category_title = $row_data['category'];
                         $category_id = $row_data['category_id'];
