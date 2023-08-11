@@ -47,4 +47,20 @@ function getBrands(){
         </li>";
     }
 }
+
+function getCategories(){
+    global $connect;
+    $selectCategories = "SELECT * FROM `categories`";
+    $resultCategory = mysqli_query($connect, $selectCategories);
+
+    while($rowData = mysqli_fetch_assoc($resultCategory)){
+        $categoryTitle = $rowData['category'];
+        $categoryId = $rowData['category_id'];
+
+        echo "
+        <li class='nav-item'>
+            <a href='index.php?category=$categoryId' class='nav-link text-light'>$categoryTitle</a>
+        </li>";
+    }
+}
 ?>

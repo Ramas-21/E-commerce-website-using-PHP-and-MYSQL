@@ -98,18 +98,6 @@ include('./functions/functionsToUse.php');
 
                     <?php
                     getBrands();
-                    /*
-                    $select_brands = "SELECT * FROM `brands`";
-                    $result_brands = mysqli_query($connect, $select_brands);
-
-                    while ($row_data = mysqli_fetch_assoc($result_brands)) {
-                        $brand_title = $row_data['brand_title'];
-                        $brand_id = $row_data['brands_id'];
-                        echo " <li class='nav-item'>
-                        <a href='index.php?brand=$brand_id' class='nav-link text-light'>$brand_title</a>
-                    </li>";
-                    }
-                    */
                     ?>
                 </ul>
 
@@ -121,6 +109,8 @@ include('./functions/functionsToUse.php');
                     </li>
 
                     <?php
+                    getCategories();
+                    /*
                     $select_categories = "SELECT * FROM `categories`";
                     $result_categories = mysqli_query($connect, $select_categories);
 
@@ -131,6 +121,7 @@ include('./functions/functionsToUse.php');
                         <a href='index.php?category=$category_id' class='nav-link text-light'>$category_title</a>
                     </li>";
                     }
+                    */
                     ?>
                 </ul>
             </div>
