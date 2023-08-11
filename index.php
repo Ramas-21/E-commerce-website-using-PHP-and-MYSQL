@@ -1,5 +1,6 @@
 <?php
 include('includes/connect.php');
+include('./functions/functionsToUse.php');
 ?>
 
 <!DOCTYPE html>
@@ -82,10 +83,11 @@ include('includes/connect.php');
                 <div class="row">
                     <!----------- fetching products ------------->
                     <?php
+                    getProducts();
+                    /*
                     $select_query = "SELECT * FROM `products` order by rand() LIMIT 0,9";
                     $result_query = mysqli_query($connect, $select_query);
-                    // $row = mysqli_fetch_assoc($result_query);
-                    // echo $row['product_name'];
+
                     while($row = mysqli_fetch_assoc($result_query)){
                         $product_id = $row['product_id'];
                         $product_name = $row['product_name'];
@@ -109,6 +111,7 @@ include('includes/connect.php');
                         </div>
                     </div>";
                     }
+                    */
                     ?>
                 </div>
             </div>
@@ -145,7 +148,7 @@ include('includes/connect.php');
                     <?php
                     $select_categories = "SELECT * FROM `categories`";
                     $result_categories = mysqli_query($connect, $select_categories);
-                    
+
                     while ($row_data = mysqli_fetch_assoc($result_categories)) {
                         $category_title = $row_data['category'];
                         $category_id = $row_data['category_id'];
