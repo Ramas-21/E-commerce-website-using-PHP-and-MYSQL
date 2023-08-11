@@ -110,18 +110,6 @@ include('./functions/functionsToUse.php');
 
                     <?php
                     getCategories();
-                    /*
-                    $select_categories = "SELECT * FROM `categories`";
-                    $result_categories = mysqli_query($connect, $select_categories);
-
-                    while ($row_data = mysqli_fetch_assoc($result_categories)) {
-                        $category_title = $row_data['category'];
-                        $category_id = $row_data['category_id'];
-                        echo " <li class='nav-item'>
-                        <a href='index.php?category=$category_id' class='nav-link text-light'>$category_title</a>
-                    </li>";
-                    }
-                    */
                     ?>
                 </ul>
             </div>
