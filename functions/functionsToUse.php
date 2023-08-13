@@ -91,7 +91,7 @@ function getUniqueBrands()
     // condition to check isset 
     if (isset($_GET['brand'])) {
         $brandId = $_GET['brand'];
-        $selectQuery = "SELECT * FROM `products` WHERE brand_id=$brandId";
+        $selectQuery = "SELECT * FROM `products` WHERE brands_id=$brandId";
         $resultQuery = mysqli_query($connect, $selectQuery);
 
         $number_of_rows = mysqli_num_rows($resultQuery);
