@@ -40,7 +40,7 @@ function getProducts()
 }
 
 // getting unique categories
-function getCategories()
+function getUniqueCategories()
 {
 
     global $connect;
