@@ -84,6 +84,7 @@ include('./functions/functionsToUse.php');
                     <!----------- fetching products ------------->
                     <?php
                     getProducts();
+                    getUniqueCategories();
                     ?>
                 </div>
             </div>
