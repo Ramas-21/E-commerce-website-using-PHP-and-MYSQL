@@ -45,8 +45,9 @@ function getUniqueCategories()
 
     global $connect;
     // condition to check isset or not
-    if (isset($_GET['categories'])) {
-        $selectQuery = "SELECT * FROM `products` order by rand() LIMIT 0,9";
+    if (isset($_GET['category'])) {
+        $categoryId = $_GET['category'];
+        $selectQuery = "SELECT * FROM `products` WHERE category_id=$categoryId";
         $resultQuery = mysqli_query($connect, $selectQuery);
 
         while ($row = mysqli_fetch_assoc($resultQuery)) {
