@@ -50,6 +50,12 @@ function getUniqueCategories()
         $selectQuery = "SELECT * FROM `products` WHERE category_id=$categoryId";
         $resultQuery = mysqli_query($connect, $selectQuery);
 
+        $number_of_rows = mysqli_num_rows($resultQuery);
+        if($number_of_rows==0)
+        {
+            echo "<h2>No stock for these category</h2>";
+        }
+
         while ($row = mysqli_fetch_assoc($resultQuery)) {
             $productId = $row['product_id'];
             $productName = $row['product_name'];
