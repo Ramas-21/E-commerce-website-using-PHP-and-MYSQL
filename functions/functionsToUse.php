@@ -53,7 +53,7 @@ function getUniqueCategories()
         $number_of_rows = mysqli_num_rows($resultQuery);
         if($number_of_rows==0)
         {
-            echo "<h2>No stock for these category</h2>";
+            echo "<h2 class='text-center text-danger'>No stock for these category</h2>";
         }
 
         while ($row = mysqli_fetch_assoc($resultQuery)) {
