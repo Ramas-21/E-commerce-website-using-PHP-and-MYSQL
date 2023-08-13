@@ -6,8 +6,8 @@ function getProducts()
 
     global $connect;
     // condition to check isset or not
-    if (!isset($_GET['categories'])) {
-        if (!isset($_GET['brands'])) {
+    if (!isset($_GET['category'])) {
+        if (!isset($_GET['brand'])) {
             $selectQuery = "SELECT * FROM `products` order by rand() LIMIT 0,9";
             $resultQuery = mysqli_query($connect, $selectQuery);
 
