@@ -89,15 +89,15 @@ function getUniqueBrands()
 
     global $connect;
     // condition to check isset 
-    if (isset($_GET['category'])) {
-        $categoryId = $_GET['category'];
-        $selectQuery = "SELECT * FROM `products` WHERE category_id=$categoryId";
+    if (isset($_GET['brand'])) {
+        $brandId = $_GET['brand'];
+        $selectQuery = "SELECT * FROM `products` WHERE brand_id=$brandId";
         $resultQuery = mysqli_query($connect, $selectQuery);
 
         $number_of_rows = mysqli_num_rows($resultQuery);
         if($number_of_rows==0)
         {
-            echo "<h2 class='text-center text-danger'>No stock for these category</h2>";
+            echo "<h2 class='text-center text-danger'>These brand is not available</h2>";
         }
 
         while ($row = mysqli_fetch_assoc($resultQuery)) {

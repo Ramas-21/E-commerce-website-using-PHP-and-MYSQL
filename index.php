@@ -85,6 +85,7 @@ include('./functions/functionsToUse.php');
                     <?php
                     getProducts();
                     getUniqueCategories();
+                    getUniqueBrands();
                     ?>
                 </div>
             </div>
