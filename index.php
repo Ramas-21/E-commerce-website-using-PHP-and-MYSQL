@@ -49,7 +49,7 @@ include('./functions/functionsToUse.php');
                             <a class="nav-link" href="#">Total Price:100/-</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex" role="search" action="search_products.php" method="get">
                         <input class="form-control me-2" type="search" name="search_data" placeholder="Search" aria-label="Search">
                         <input type="submit" value="Search" class="btn btn-outline-light" name="search_product_data">
                     </form>
