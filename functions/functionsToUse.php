@@ -164,7 +164,7 @@ function searchProducts()
 {
     global $connect;
 
-    $selectQuery = "SELECT * FROM `products` order by rand() LIMIT 0,9";
+    $searchQuery = "SELECT * FROM `products` WHERE product_keyword LIKE '%value%'";
     $resultQuery = mysqli_query($connect, $selectQuery);
 
     while ($row = mysqli_fetch_assoc($resultQuery)) {
