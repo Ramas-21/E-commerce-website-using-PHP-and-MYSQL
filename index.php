@@ -51,7 +51,7 @@ include('./functions/functionsToUse.php');
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" name="search_data" placeholder="Search" aria-label="Search">
-                        <input type="submit" value="Search" class="btn btn-outline-light">
+                        <input type="submit" value="Search" class="btn btn-outline-light" name="search_product_data">
                     </form>
                 </div>
             </div>
