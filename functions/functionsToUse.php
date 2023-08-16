@@ -163,22 +163,23 @@ function getCategories()
 function searchProducts()
 {
     global $connect;
+    if (isset($_GET['search_product_data'])) {
+        $search_data = $_GET['search_data'];
+        $searchQuery = "SELECT * FROM `products` WHERE product_keyword LIKE '%$search_data%'";
+        $resultQuery = mysqli_query($connect, $searchQuery);
 
-    $searchQuery = "SELECT * FROM `products` WHERE product_keyword LIKE '%value%'";
-    $resultQuery = mysqli_query($connect, $selectQuery);
+        while ($row = mysqli_fetch_assoc($resultQuery)) {
+            $productId = $row['product_id'];
+            $productName = $row['product_name'];
+            $productDescription = $row['product_description'];
+            $productImage1 = $row['product_image1'];
+            $productImage2 = $row['product_image2'];
+            $productImage3 = $row['product_image3'];
+            $productPrice = $row['product_price'];
+            $categoryId = $row['category_id'];
+            $brandId = $row['brands_id'];
 
-    while ($row = mysqli_fetch_assoc($resultQuery)) {
-        $productId = $row['product_id'];
-        $productName = $row['product_name'];
-        $productDescription = $row['product_description'];
-        $productImage1 = $row['product_image1'];
-        $productImage2 = $row['product_image2'];
-        $productImage3 = $row['product_image3'];
-        $productPrice = $row['product_price'];
-        $categoryId = $row['category_id'];
-        $brandId = $row['brands_id'];
-
-        echo "
+            echo "
         <div class='col-md-4 mb-2'>
             <div class='card'>
                 <img src='./admin_section/product_images/$productImage1' class='card-img-top' alt='$productName'>
@@ -190,5 +191,6 @@ function searchProducts()
                 </div>
             </div>
         </div>";
+        }
     }
 }
