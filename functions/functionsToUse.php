@@ -168,6 +168,11 @@ function searchProducts()
         $searchQuery = "SELECT * FROM `products` WHERE product_keyword LIKE '%$search_data%'";
         $resultQuery = mysqli_query($connect, $searchQuery);
 
+        $number_of_rows = mysqli_num_rows($resultQuery);
+        if ($number_of_rows == 0) {
+            echo "<h2 class='text-center text-danger'>No results that match.</h2>";
+        }
+
         while ($row = mysqli_fetch_assoc($resultQuery)) {
             $productId = $row['product_id'];
             $productName = $row['product_name'];
