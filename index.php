@@ -127,7 +127,7 @@ include('./functions/functionsToUse.php');
 
 
         <!---------------------- footer ------------------>
-        <?php include('./includes/')?>
+        <?php include('./includes/footer.php')?>
     </div>
 
 
