@@ -81,6 +81,13 @@ include('./functions/functionsToUse.php');
             <div class="col-md-10">
                 <!---------- products ----------->
                 <div class="row">
+                    <div class="col-md-4">
+                        <!------- image ----->
+                    </div>
+
+                    <div class="col-md-8">
+                        <!-------- related images -------->
+                    </div>
                     <!----------- fetching products ------------->
                     <?php
                     getUniqueCategories();
