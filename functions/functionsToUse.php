@@ -46,7 +46,7 @@ function get_all_products()
     // condition to check isset or not
     if (!isset($_GET['category'])) {
         if (!isset($_GET['brand'])) {
-            $selectQuery = "SELECT * FROM `products` order by rand() LIMIT 0,9";
+            $selectQuery = "SELECT * FROM `products` order by rand()";
             $resultQuery = mysqli_query($connect, $selectQuery);
 
             while ($row = mysqli_fetch_assoc($resultQuery)) {
