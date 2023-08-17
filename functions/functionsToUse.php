@@ -30,7 +30,7 @@ function getProducts()
                             <h5 class='card-title'>$productName</h5>
                             <p class='card-text'>$productDescription</p>
                             <a href='#' class='btn btn-info'>Add to cart</a>
-                            <a href='product_details.php?product_equals=$productId' class='btn btn-secondary'>View More</a>
+                            <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
                         </div>
                     </div>
                 </div>";
