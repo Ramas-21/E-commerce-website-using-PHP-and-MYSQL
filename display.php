@@ -83,7 +83,7 @@ include('./functions/functionsToUse.php');
                 <div class="row">
                     <!----------- fetching products ------------->
                     <?php
-                    getProducts();
+                    get_all_products();
                     getUniqueCategories();
                     getUniqueBrands();
                     ?>
