@@ -83,6 +83,15 @@ include('./functions/functionsToUse.php');
                 <div class="row">
                     <div class="col-md-4">
                         <!------- image ----->
+                        <div class='card'>
+                            <img src='./images/istockphoto-1132357230-1024x1024.jpg' class='card-img-top' alt='$productName'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>$productName</h5>
+                                <p class='card-text'>$productDescription</p>
+                                <a href='#' class='btn btn-info'>Add to cart</a>
+                                <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-md-8">
@@ -133,7 +142,7 @@ include('./functions/functionsToUse.php');
 
 
         <!---------------------- footer ------------------>
-        <?php include('./includes/footer.php')?>
+        <?php include('./includes/footer.php') ?>
     </div>
 
 
