@@ -100,7 +100,10 @@ include('./functions/functionsToUse.php');
                             <h4 class="text-center text-info mb-5">Related products</h4>
                         </div>
                         <div class="col-md-6">
-                            
+                            <img src='./images/istockphoto-1132357230-1024x1024.jpg' class='card-img-top' alt='$productName'>
+                        </div>
+                        <div class="col-md-6">
+                            <img src='./images/istockphoto-1132357230-1024x1024.jpg' class='card-img-top' alt='$productName'>
                         </div>
                     </div>
                     <!----------- fetching products ------------->
