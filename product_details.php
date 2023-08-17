@@ -96,6 +96,12 @@ include('./functions/functionsToUse.php');
 
                     <div class="col-md-8">
                         <!-------- related images -------->
+                        <div class="col-md-12">
+                            <h4 class="text-center text-info mb-5">Related products</h4>
+                        </div>
+                        <div class="col-md-6">
+                            
+                        </div>
                     </div>
                     <!----------- fetching products ------------->
                     <?php
