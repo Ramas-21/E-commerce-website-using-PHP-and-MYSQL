@@ -68,7 +68,7 @@ function get_all_products()
                             <h5 class='card-title'>$productName</h5>
                             <p class='card-text'>$productDescription</p>
                             <a href='#' class='btn btn-info'>Add to cart</a>
-                            <a href='#' class='btn btn-secondary'>View More</a>
+                            <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
                         </div>
                     </div>
                 </div>";
@@ -112,7 +112,7 @@ function getUniqueCategories()
                         <h5 class='card-title'>$productName</h5>
                         <p class='card-text'>$productDescription</p>
                         <a href='#' class='btn btn-info'>Add to cart</a>
-                        <a href='#' class='btn btn-secondary'>View More</a>
+                        <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
                     </div>
                 </div>
             </div>";
@@ -155,7 +155,7 @@ function getUniqueBrands()
                         <h5 class='card-title'>$productName</h5>
                         <p class='card-text'>$productDescription</p>
                         <a href='#' class='btn btn-info'>Add to cart</a>
-                        <a href='#' class='btn btn-secondary'>View More</a>
+                        <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
                     </div>
                 </div>
             </div>";
@@ -230,7 +230,7 @@ function searchProducts()
                     <h5 class='card-title'>$productName</h5>
                     <p class='card-text'>$productDescription</p>
                     <a href='#' class='btn btn-info'>Add to cart</a>
-                    <a href='#' class='btn btn-secondary'>View More</a>
+                    <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
                 </div>
             </div>
         </div>";
