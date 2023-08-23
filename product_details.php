@@ -110,6 +110,7 @@ include('./functions/functionsToUse.php');
                     </div>
                     <!----------- fetching products ------------->
                     <?php
+                    view_more_details();
                     getUniqueCategories();
                     getUniqueBrands();
                     ?>
