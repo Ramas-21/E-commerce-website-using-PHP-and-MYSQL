@@ -275,7 +275,6 @@ function view_more_details()
                 </div>
 
                 <div class='col-md-8'>
-                        <!-------- related images -------->
                         <div class='row'>
                             <div class='col-md-12'>
                                 <h4 class='text-center text-info mb-5'>Related products</h4>
