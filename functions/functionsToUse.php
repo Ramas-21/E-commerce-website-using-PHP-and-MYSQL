@@ -262,30 +262,30 @@ function view_more_details()
                     $brandId = $row['brands_id'];
 
                     echo "
-                <div class='col-md-4 mb-2'>
-                    <div class='card'>
-                        <img src='./admin_section/product_images/$productImage1' class='card-img-top' alt='$productName'>
-                        <div class='card-body'>
-                            <h5 class='card-title'>$productName</h5>
-                            <p class='card-text'>$productDescription</p>
-                            <a href='#' class='btn btn-info'>Add to cart</a>
-                            <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
+                    <div class='col-md-4 mb-2'>
+                        <div class='card'>
+                            <img src='./admin_section/product_images/$productImage1' class='card-img-top' alt='$productName'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>$productName</h5>
+                                <p class='card-text'>$productDescription</p>
+                                <a href='#' class='btn btn-info'>Add to cart</a>
+                                <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class='col-md-8'>
-                        <div class='row'>
-                            <div class='col-md-12'>
-                                <h4 class='text-center text-info mb-5'>Related products</h4>
+                    <div class='col-md-8'>
+                            <div class='row'>
+                                <div class='col-md-12'>
+                                    <h4 class='text-center text-info mb-5'>Related products</h4>
+                                </div>
+                                <div class='col-md-6'>
+                                    <img src='./admin_section/product_images/$productImage2' class='card-img-top' alt='$productName'>
+                                </div>
+                                <div class='col-md-6'>
+                                    <img src='./admin_section/product_images/$productImage3' class='card-img-top' alt='$productName'>
+                                </div>
                             </div>
-                            <div class='col-md-6'>
-                                <img src='./admin_section/product_images/$productImage2' class='card-img-top' alt='$productName'>
-                            </div>
-                            <div class='col-md-6'>
-                                <img src='./admin_section/product_images/$productImage3' class='card-img-top' alt='$productName'>
-                            </div>
-                        </div>
                     </div>";
                 }
             }
