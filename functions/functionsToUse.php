@@ -246,6 +246,7 @@ function view_more_details()
     if (isset($_GET['product_id'])) {
         if (!isset($_GET['category'])) {
             if (!isset($_GET['brand'])) {
+                $productId = $_GET['product_id'];
                 $selectQuery = "SELECT * FROM `products` order by rand() LIMIT 0,9";
                 $resultQuery = mysqli_query($connect, $selectQuery);
 
