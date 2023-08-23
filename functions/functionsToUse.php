@@ -237,3 +237,8 @@ function searchProducts()
         }
     }
 }
+
+// view more details function
+function view_more_details(){
+
+}
