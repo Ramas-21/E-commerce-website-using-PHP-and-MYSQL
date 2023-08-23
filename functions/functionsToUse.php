@@ -281,10 +281,10 @@ function view_more_details()
                                 <h4 class='text-center text-info mb-5'>Related products</h4>
                             </div>
                             <div class='col-md-6'>
-                                <img src='./images/istockphoto-1132357230-1024x1024.jpg' class='card-img-top' alt='$productName'>
+                                <img src='./admin_section/product_images/$productImage2' class='card-img-top' alt='$productName'>
                             </div>
                             <div class='col-md-6'>
-                                <img src='./images/istockphoto-1132357230-1024x1024.jpg' class='card-img-top' alt='$productName'>
+                                <img src='./admin_section/product_images/$productImage3' class='card-img-top' alt='$productName'>
                             </div>
                         </div>
                     </div>";
