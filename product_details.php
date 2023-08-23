@@ -80,7 +80,7 @@ include('./functions/functionsToUse.php');
         <div class="row px-1">
             <div class="col-md-10">
                 <!---------- products ----------->
-                <div class="row"></div>
+                <div class="row">
                     <!----------- fetching products ------------->
                     <?php
                     view_more_details();
