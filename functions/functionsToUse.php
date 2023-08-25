@@ -287,8 +287,12 @@ function view_more_details()
                                 </div>
                             </div>
                     </div>";
-                }
+                } 
             }
         }
     }
+}
+function getIpAddress()
+{
+    
 }
