@@ -294,5 +294,8 @@ function view_more_details()
 }
 function getIpAddress()
 {
-    
+    // checking whether the ip is from the share internet
+    if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    }
 }
