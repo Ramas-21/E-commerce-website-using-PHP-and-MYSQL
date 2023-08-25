@@ -306,4 +306,5 @@ function getIpAddress()
         // whether ip is from the remote address
         $ip = $_SERVER['REMOTE_ADDR'];
     }
+    return $ip;
 }
