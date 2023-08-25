@@ -298,4 +298,8 @@ function getIpAddress()
     if(!empty($_SERVER['HTTP_CLIENT_IP'])){
         $ip = $_SERVER['HTTP_CLIENT_IP'];
     }
+    // whether ip si from the proxy
+    elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    }
 }
