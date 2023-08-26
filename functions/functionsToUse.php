@@ -29,7 +29,7 @@ function getProducts()
                         <div class='card-body'>
                             <h5 class='card-title'>$productName</h5>
                             <p class='card-text'>$productDescription</p>
-                            <a href='#' class='btn btn-info'>Add to cart</a>
+                            <a href='index.php?add_to_cart=$productId' class='btn btn-info'>Add to cart</a>
                             <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
                         </div>
                     </div>
@@ -310,5 +310,5 @@ function getIpAddress()
 }
 // cart function
 function cart(){
-    
+
 }
