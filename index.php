@@ -56,8 +56,9 @@ include('./functions/functionsToUse.php');
                 </div>
             </div>
         </nav>
-
-
+        <?php
+        cart();
+        ?>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
             <ul class="navbar-nav me-auto">
@@ -129,7 +130,7 @@ include('./functions/functionsToUse.php');
 
 
         <!---------------------- footer ------------------>
-        <?php include('./includes/footer.php')?>
+        <?php include('./includes/footer.php') ?>
     </div>
 
 
