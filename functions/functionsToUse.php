@@ -315,5 +315,10 @@ function cart(){
         $ip = getIpAddress();
         $get_product_id = $_GET['add_to_cart'];
         $select_query = "SELECT * FROM `cart_details` WHERE ip_address = $ip AND product_id = $get_product_id";
+        $resultQuery = mysqli_query($connect, $select_query);
+        $number_of_rows = mysqli_num_rows($resultQuery);
+        if ($number_of_rows > 0) {
+            echo "<h2 class='text-center text-danger'>No results that match.</h2>";
+        }
     }
 }
