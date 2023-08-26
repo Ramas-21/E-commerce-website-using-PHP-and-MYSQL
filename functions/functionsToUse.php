@@ -318,7 +318,7 @@ function cart(){
         $resultQuery = mysqli_query($connect, $select_query);
         $number_of_rows = mysqli_num_rows($resultQuery);
         if ($number_of_rows > 0) {
-            echo "<h2 class='text-center text-danger'>No results that match.</h2>";
+            echo "<script>alert('These item already exists in your cart.')</script>";
         }
     }
 }
