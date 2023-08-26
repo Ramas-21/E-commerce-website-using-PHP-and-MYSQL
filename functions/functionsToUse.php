@@ -310,5 +310,9 @@ function getIpAddress()
 }
 // cart function
 function cart(){
-
+    if(isset($_GET['add_to_cart'])){
+        global $connect;
+        $ip = getIpAddress();
+        $get_prod
+    }
 }
