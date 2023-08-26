@@ -323,7 +323,7 @@ function cart(){
         }else
         {
             $insert_query = "INSERT INTO `cart_details` (product_id,ip_address,quantity) VALUES ($get_product_id,'$ip',0)";
-            
+            $resultQuery = mysqli_query($connect, $insert_query);
         }
     }
 }
