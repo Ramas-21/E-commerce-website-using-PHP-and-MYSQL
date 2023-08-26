@@ -313,6 +313,7 @@ function cart(){
     if(isset($_GET['add_to_cart'])){
         global $connect;
         $ip = getIpAddress();
-        $get_prod
+        $get_product_id = $_GET['add_to_cart'];
+        $select_query = "SELECT * FROM `cart_details` WHERE ip_address = $ip AND product_id = $get_product_id";
     }
 }
