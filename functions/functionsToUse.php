@@ -308,3 +308,7 @@ function getIpAddress()
     }
     return $ip;
 }
+// cart function
+function cart(){
+    
+}
