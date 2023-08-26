@@ -319,6 +319,7 @@ function cart(){
         $number_of_rows = mysqli_num_rows($resultQuery);
         if ($number_of_rows > 0) {
             echo "<script>alert('These item already exists in your cart.')</script>";
+            echo "<script>window.open('index.php')</script>"
         }
     }
 }
