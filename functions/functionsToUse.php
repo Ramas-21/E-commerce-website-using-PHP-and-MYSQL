@@ -334,10 +334,10 @@ function numberOfItemsInCart(){
     if(isset($_GET['add_to_cart'])){
         global $connect;
         $ip = getIpAddress();
-        $select_query = "SELECT * FROM `cart_details` WHERE ip_address = '$ip' AND product_id = $get_product_id";
+        $select_query = "SELECT * FROM `cart_details` WHERE ip_address = '$ip'";
         $resultQuery = mysqli_query($connect, $select_query);
-        $number_of_rows = mysqli_num_rows($resultQuery);
-        if ($number_of_rows > 0) {
+        $count_cart_items = mysqli_num_rows($resultQuery);
+        if ($count_cart_items > 0) {
             echo "<script>alert('These item already exists in your cart.')</script>";
             echo "<script>window.open('index.php','_self')</script>";
         }else
