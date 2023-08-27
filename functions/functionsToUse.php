@@ -329,3 +329,24 @@ function cart(){
         }
     }
 }
+// function to get the number of items in the cart
+function numberOfItemsInCart(){
+    if(isset($_GET['add_to_cart'])){
+        global $connect;
+        $ip = getIpAddress();
+        $get_product_id = $_GET['add_to_cart'];
+        $select_query = "SELECT * FROM `cart_details` WHERE ip_address = '$ip' AND product_id = $get_product_id";
+        $resultQuery = mysqli_query($connect, $select_query);
+        $number_of_rows = mysqli_num_rows($resultQuery);
+        if ($number_of_rows > 0) {
+            echo "<script>alert('These item already exists in your cart.')</script>";
+            echo "<script>window.open('index.php','_self')</script>";
+        }else
+        {
+            $insert_query = "INSERT INTO `cart_details` (product_id,ip_address,quantity) VALUES ($get_product_id,'$ip',0)";
+            $resultQuery = mysqli_query($connect, $insert_query);
+            echo "<script>alert('Successfully added to cart.')</script>";
+            echo "<script>window.open('index.php','_self')</script>";
+        }
+    }
+}
