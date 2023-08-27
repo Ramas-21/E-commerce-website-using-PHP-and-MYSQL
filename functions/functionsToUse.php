@@ -269,7 +269,7 @@ function view_more_details()
                                 <h5 class='card-title'>$productName</h5>
                                 <p class='card-text'>$productDescription</p>
                                 <a href='index.php?add_to_cart=$productId' class='btn btn-info'>Add to cart</a>
-                                <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>Home</a>
+                                <a href='index.php' class='btn btn-secondary'>Home</a>
                             </div>
                         </div>
                     </div>
