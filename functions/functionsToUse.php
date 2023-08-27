@@ -29,6 +29,7 @@ function getProducts()
                         <div class='card-body'>
                             <h5 class='card-title'>$productName</h5>
                             <p class='card-text'>$productDescription</p>
+                            <p class='card-text'>price: $productPrice/-</p>
                             <a href='index.php?add_to_cart=$productId' class='btn btn-info'>Add to cart</a>
                             <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
                         </div>
@@ -67,6 +68,7 @@ function get_all_products()
                         <div class='card-body'>
                             <h5 class='card-title'>$productName</h5>
                             <p class='card-text'>$productDescription</p>
+                            <p class='card-text'>price: $productPrice/-</p>
                             <a href='index.php?add_to_cart=$productId' class='btn btn-info'>Add to cart</a>
                             <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
                         </div>
@@ -111,6 +113,7 @@ function getUniqueCategories()
                     <div class='card-body'>
                         <h5 class='card-title'>$productName</h5>
                         <p class='card-text'>$productDescription</p>
+                        <p class='card-text'>price: $productPrice/-</p>
                         <a href='index.php?add_to_cart=$productId' class='btn btn-info'>Add to cart</a>
                         <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
                     </div>
@@ -154,6 +157,7 @@ function getUniqueBrands()
                     <div class='card-body'>
                         <h5 class='card-title'>$productName</h5>
                         <p class='card-text'>$productDescription</p>
+                        <p class='card-text'>price: $productPrice/-</p>
                         <a href='index.php?add_to_cart=$productId' class='btn btn-info'>Add to cart</a>
                         <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
                     </div>
@@ -229,6 +233,7 @@ function searchProducts()
                 <div class='card-body'>
                     <h5 class='card-title'>$productName</h5>
                     <p class='card-text'>$productDescription</p>
+                    <p class='card-text'>price: $productPrice/-</p>
                     <a href='index.php?add_to_cart=$productId' class='btn btn-info'>Add to cart</a>
                     <a href='product_details.php?product_id=$productId' class='btn btn-secondary'>View More</a>
                 </div>
@@ -268,6 +273,7 @@ function view_more_details()
                             <div class='card-body'>
                                 <h5 class='card-title'>$productName</h5>
                                 <p class='card-text'>$productDescription</p>
+                                <p class='card-text'>price: $productPrice/-</p>
                                 <a href='index.php?add_to_cart=$productId' class='btn btn-info'>Add to cart</a>
                                 <a href='index.php' class='btn btn-secondary'>Home</a>
                             </div>
