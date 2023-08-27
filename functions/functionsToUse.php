@@ -287,7 +287,7 @@ function view_more_details()
                                 </div>
                             </div>
                     </div>";
-                } 
+                }
             }
         }
     }
@@ -295,22 +295,22 @@ function view_more_details()
 function getIpAddress()
 {
     // checking whether the ip is from the share internet
-    if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
         $ip = $_SERVER['HTTP_CLIENT_IP'];
     }
     // whether ip si from the proxy
-    elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+    elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
         $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-    }
-    else{
+    } else {
         // whether ip is from the remote address
         $ip = $_SERVER['REMOTE_ADDR'];
     }
     return $ip;
 }
 // cart function
-function cart(){
-    if(isset($_GET['add_to_cart'])){
+function cart()
+{
+    if (isset($_GET['add_to_cart'])) {
         global $connect;
         $ip = getIpAddress();
         $get_product_id = $_GET['add_to_cart'];
@@ -320,8 +320,7 @@ function cart(){
         if ($number_of_rows > 0) {
             echo "<script>alert('These item already exists in your cart.')</script>";
             echo "<script>window.open('index.php','_self')</script>";
-        }else
-        {
+        } else {
             $insert_query = "INSERT INTO `cart_details` (product_id,ip_address,quantity) VALUES ($get_product_id,'$ip',0)";
             $resultQuery = mysqli_query($connect, $insert_query);
             echo "<script>alert('Successfully added to cart.')</script>";
@@ -330,19 +329,20 @@ function cart(){
     }
 }
 // function to get the number of items in the cart
-function numberOfItemsInCart(){
-    if(isset($_GET['add_to_cart'])){
+function numberOfItemsInCart()
+{
+    if (isset($_GET['add_to_cart'])) {
         global $connect;
         $ip = getIpAddress();
         $select_query = "SELECT * FROM `cart_details` WHERE ip_address = '$ip'";
         $resultQuery = mysqli_query($connect, $select_query);
         $count_cart_items = mysqli_num_rows($resultQuery);
-        }else
-        {
-            $insert_query = "INSERT INTO `cart_details` (product_id,ip_address,quantity) VALUES ($get_product_id,'$ip',0)";
-            $resultQuery = mysqli_query($connect, $insert_query);
-            echo "<script>alert('Successfully added to cart.')</script>";
-            echo "<script>window.open('index.php','_self')</script>";
-        }
+    } else {
+        global $connect;
+        $ip = getIpAddress();
+        $select_query = "SELECT * FROM `cart_details` WHERE ip_address = '$ip'";
+        $resultQuery = mysqli_query($connect, $select_query);
+        $count_cart_items = mysqli_num_rows($resultQuery);
     }
+    echo $count_cart_items;
 }
