@@ -373,3 +373,4 @@ function totalPrice()
     }
     echo $total;
 }
+?>
