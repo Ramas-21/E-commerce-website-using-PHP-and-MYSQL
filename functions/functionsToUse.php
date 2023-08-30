@@ -356,4 +356,6 @@ function numberOfItemsInCart()
 function totalPrice()
 {
     global $connect;
+    $ip = getIpAddress();
+
 }
