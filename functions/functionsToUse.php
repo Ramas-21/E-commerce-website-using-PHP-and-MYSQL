@@ -359,4 +359,8 @@ function totalPrice()
     $ip = getIpAddress();
     $totalPrice_query = "SELECT * FROM `cart_details` WHERE ip_address = '$ip'";
     $result = mysqli_query($connect, $totalPrice_query);
+    
+    while($row = mysqli_fetch_array($result)){
+        $product_id = $row['product_id'];
+    }
 }
