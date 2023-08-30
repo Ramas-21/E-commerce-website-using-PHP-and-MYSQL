@@ -364,5 +364,8 @@ function totalPrice()
         $product_id = $row['product_id'];
         $select_products = "SELECT * FROM `products` WHERE product_id = '$product_id'";
         $result_products = mysqli_query($connect, $select_products);
+        while($row_product_price = mysqli_fetch_array($result_products)){
+            
+        }
     }
 }
