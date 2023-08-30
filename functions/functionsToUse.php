@@ -367,6 +367,7 @@ function totalPrice()
         while($row_product_price = mysqli_fetch_array($result_products)){
             $product_price = array($row_product_price['price']);
             $product_values = array_sum($product_price);
+            $total += $product_values;
         }
     }
 }
