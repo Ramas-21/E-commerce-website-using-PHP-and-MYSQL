@@ -355,5 +355,5 @@ function numberOfItemsInCart()
 // total price function
 function totalPrice()
 {
-    
+    global $connect;
 }
