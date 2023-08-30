@@ -370,4 +370,5 @@ function totalPrice()
             $total += $product_values;
         }
     }
+    echo $total;
 }
