@@ -352,3 +352,8 @@ function numberOfItemsInCart()
     }
     echo $count_cart_items;
 }
+// total price function
+function totalPrice()
+{
+    
+}
