@@ -46,10 +46,6 @@ include('./functions/functionsToUse.php');
                             <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i><sup><?php numberOfItemsInCart();?></sup></a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search" action="search_products.php" method="get">
-                        <input class="form-control me-2" type="search" name="search_data" placeholder="Search" aria-label="Search">
-                        <input type="submit" value="Search" class="btn btn-outline-light" name="search_product_data">
-                    </form>
                 </div>
             </div>
         </nav>
