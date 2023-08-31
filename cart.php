@@ -45,9 +45,6 @@ include('./functions/functionsToUse.php');
                         <li class="nav-item">
                             <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i><sup><?php numberOfItemsInCart();?></sup></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Total Price: <?php totalPrice();?>/-</a>
-                        </li>
                     </ul>
                     <form class="d-flex" role="search" action="search_products.php" method="get">
                         <input class="form-control me-2" type="search" name="search_data" placeholder="Search" aria-label="Search">
