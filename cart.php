@@ -86,7 +86,7 @@ include('./functions/functionsToUse.php');
                     <tbody>
                         <tr>
                             <td>Shoe</td>
-                            <td><img src="./images/istockphoto-1132357230-1024x1024.jpg" alt="#"></td>
+                            <td><img src="#" alt="#"></td>
                             <td><input type="text"></td>
                             <td><input type="checkbox"></td>
                             <td>
