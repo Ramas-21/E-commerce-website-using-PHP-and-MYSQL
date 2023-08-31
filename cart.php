@@ -75,12 +75,12 @@ include('./functions/functionsToUse.php');
                 <table class="table table-border">
                     <thead>
                         <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <th>Product Title</th>
+                            <th>Product Image</th>
+                            <th>Quantity</th>
+                            <th>Total Price</th>
+                            <th>Remove</th>
+                            <th>Operations</th>
                         </tr>
                     </thead>
                 </table>
