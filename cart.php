@@ -73,7 +73,16 @@ include('./functions/functionsToUse.php');
         <div class="container">
             <div class="row">
                 <table class="table table-border">
-                    
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
                 </table>
             </div>
         </div>
