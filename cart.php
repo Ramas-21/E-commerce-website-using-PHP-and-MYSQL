@@ -96,6 +96,9 @@ include('./functions/functionsToUse.php');
                         </tr>
                     </tbody>
                 </table>
+                <div>
+                    <h4 class="px-3">Subtotal:<strong class="text-info">5000/-</strong></h4>
+                </div>
             </div>
         </div>
         <!---------------------- footer ------------------>
