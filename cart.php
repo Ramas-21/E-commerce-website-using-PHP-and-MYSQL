@@ -98,6 +98,7 @@ include('./functions/functionsToUse.php');
                 </table>
                 <div>
                     <h4 class="px-3">Subtotal:<strong class="text-info">5000/-</strong></h4>
+                    <a href="index.php"><button>Continue shopping</button></a>
                 </div>
             </div>
         </div>
