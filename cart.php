@@ -99,6 +99,7 @@ include('./functions/functionsToUse.php');
                 <div class="d-flex">
                     <h4 class="px-3">Subtotal:<strong class="text-info">5000/-</strong></h4>
                     <a href="index.php"><button class="bg-info px-3 border-0">Continue shopping</button></a>
+                    <a href="#"><button class="bg-info px-3 border-0">Checkout</button></a>
                 </div>
             </div>
         </div>
