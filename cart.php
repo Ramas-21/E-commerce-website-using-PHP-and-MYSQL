@@ -83,6 +83,18 @@ include('./functions/functionsToUse.php');
                             <th>Operations</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        <tr>
+                            <td>Shoe</td>
+                            <td><img src="./images/istockphoto-1132357230-1024x1024.jpg" alt="#"></td>
+                            <td><input type="text"></td>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <p>Update</p>
+                                <p>Remove</p>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>
