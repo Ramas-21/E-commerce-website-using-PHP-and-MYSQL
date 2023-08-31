@@ -70,7 +70,11 @@ include('./functions/functionsToUse.php');
             <p class="text-center">Offering the best and quality products. Shop with us today.</p>
         </div>
 
-
+        <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
         <!---------------------- footer ------------------>
         <?php include('./includes/footer.php') ?>
     </div>
