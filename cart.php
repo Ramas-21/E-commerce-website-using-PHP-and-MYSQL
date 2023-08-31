@@ -72,7 +72,7 @@ include('./functions/functionsToUse.php');
 
         <div class="container">
             <div class="row">
-                <table class="table table-border">
+                <table class="table table-bordered">
                     <thead>
                         <tr>
                             <th>Product Title</th>
