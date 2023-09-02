@@ -88,6 +88,7 @@ include('./functions/functionsToUse.php');
                             <td>Shoe</td>
                             <td><img src="#" alt="#"></td>
                             <td><input type="text"></td>
+                            <td>5000</td>
                             <td><input type="checkbox"></td>
                             <td>
                                 <p>Update</p>
