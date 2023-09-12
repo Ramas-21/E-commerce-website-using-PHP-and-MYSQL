@@ -96,7 +96,14 @@ include('./functions/functionsToUse.php');
                                 $product_id = $row['product_id'];
                                 $select_products = "select * from `products` where product_id = '$product_id'";
                                 $result_products = mysqli_query($connect, $select_products);
-                                
+                                while($row_product_price = mysqli_fetch_array($result_products)){
+                                    $productPrice = array($row_product_price['product_price']);
+                                    $price_table = $row_product_price['product_price'];
+                                    $productName = $row_product_price['product_name'];
+                                    $productImage1 = $result_products['product_image1'];
+                                    $product_values = array_sum($productPrice);
+                                    $total_price += $product_values;
+                                }
                             }
                             ?>
                             <tr>
