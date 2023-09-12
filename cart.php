@@ -92,7 +92,7 @@ include('./functions/functionsToUse.php');
                                 <td>5000</td>
                                 <td><input type="checkbox"></td>
                                 <td>
-                                    <p>Update</p>
+                                    <input type="submit" value="Update cart" class="bg-info px-3 py-2 border-0 mx-3" name="update_cart">
                                     <p>Remove</p>
                                 </td>
                             </tr>
