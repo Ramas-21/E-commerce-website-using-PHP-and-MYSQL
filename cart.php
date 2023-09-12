@@ -85,10 +85,17 @@ include('./functions/functionsToUse.php');
                             </tr>
                         </thead>
                         <tbody>
+                            <!--------- PHP CODE TO DISPLAY DYNAMIC DATA ------>
+                            <?php
+                            global $connect;
+                            $get_ip_add = getIpAddress();
+                            $total_price = 0;
+                            $cart_query = "select * from `cart_details` where ip_address = '$get_ip_address'";
+                            ?>
                             <tr>
                                 <td>Shoe</td>
                                 <td><img src="#" alt="#"></td>
-                                <td><input type="text"></td>
+                                <td><input type="text"name="" id="" class="form-input w-50"></td>
                                 <td>5000</td>
                                 <td><input type="checkbox"></td>
                                 <td>
