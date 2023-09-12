@@ -100,14 +100,14 @@ include('./functions/functionsToUse.php');
                                     $productPrice = array($row_product_price['product_price']);
                                     $price_table = $row_product_price['product_price'];
                                     $productName = $row_product_price['product_name'];
-                                    $productImage1 = $result_products['product_image1'];
+                                    $productImage1 = $row_product_price['product_image1'];
                                     $product_values = array_sum($productPrice);
                                     $total_price += $product_values;
                                 }
                             }
                             ?>
                             <tr>
-                                <td>Shoe</td>
+                                <td><?php echo $productName?></td>
                                 <td><img src="#" alt="#"></td>
                                 <td><input type="text"name="" id="" class="form-input w-50"></td>
                                 <td>5000</td>
