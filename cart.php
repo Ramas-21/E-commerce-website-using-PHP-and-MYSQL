@@ -109,7 +109,7 @@ include('./functions/functionsToUse.php');
                             <tr>
                                 <td><?php echo $productName?></td>
                                 <td><img src="./images/<?php echo $productImage1?>" alt="#" class="cart_img"></td>
-                                <td><input type="text"name="" id="" class="form-input w-50"></td>
+                                <td><input type="text"name="quantity" class="form-input w-50"></td>
                                 <td>5000</td>
                                 <td><input type="checkbox"></td>
                                 <td>
