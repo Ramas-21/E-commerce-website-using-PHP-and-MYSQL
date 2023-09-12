@@ -91,6 +91,11 @@ include('./functions/functionsToUse.php');
                             $get_ip_add = getIpAddress();
                             $total_price = 0;
                             $cart_query = "select * from `cart_details` where ip_address = '$get_ip_address'";
+                            $result = mysqli_query($connect, $cart_query);
+                            while($row = mysqli_fetch_array($result)){
+                                $product_id = $row['product_id'];
+                                $select_products = "select * from `products` where product_id = '$product_id'";
+                            }
                             ?>
                             <tr>
                                 <td>Shoe</td>
