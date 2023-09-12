@@ -110,7 +110,14 @@ include('./functions/functionsToUse.php');
                                 <td><?php echo $productName?></td>
                                 <td><img src="./images/<?php echo $productImage1?>" alt="#" class="cart_img"></td>
                                 <td><input type="text"name="quantity" class="form-input w-50"></td>
-                                <td>5000</td>
+                                <?php
+                                $get_ip_add = getIpAddress();
+                                if(isset($_POST['update_cart'])){
+                                    $quantities = $_POST['quantity'];
+                                    $update_cart = "up"
+                                }
+                                ?>
+                                <td><?php echo $price_table?>/-</td>
                                 <td><input type="checkbox"></td>
                                 <td>
                                     <input type="submit" value="Update cart" class="bg-info px-3 py-2 border-0 mx-3" name="update_cart">
