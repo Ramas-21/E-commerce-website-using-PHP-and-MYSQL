@@ -114,8 +114,8 @@ include('./functions/functionsToUse.php');
                                 $get_ip_add = getIpAddress();
                                 if(isset($_POST['update_cart'])){
                                     $quantities = $_POST['quantity'];
-                                    $update_cart = "update `cart_details` set quantity = $quantities where ip_address = $get_ip_add";
-                                    $result_products = mysqli_query($connect, $update_cart);
+                                    $update_cart = "update `cart_details` set quantity = $quantities where ip_address = '$get_ip_add'";
+                                    $result_products_quantity = mysqli_query($connect, $update_cart);
                                     $total_price = $total_price * $quantities;
                                 }
                                 ?>
