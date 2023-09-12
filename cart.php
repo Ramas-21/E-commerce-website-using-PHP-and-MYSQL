@@ -114,7 +114,7 @@ include('./functions/functionsToUse.php');
                                 $get_ip_add = getIpAddress();
                                 if(isset($_POST['update_cart'])){
                                     $quantities = $_POST['quantity'];
-                                    $update_cart = "up"
+                                    $update_cart = "update `cart_details` set quantity = $quantities where ip_address = $get_ip_add";
                                 }
                                 ?>
                                 <td><?php echo $price_table?>/-</td>
