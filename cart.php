@@ -95,6 +95,8 @@ include('./functions/functionsToUse.php');
                             while($row = mysqli_fetch_array($result)){
                                 $product_id = $row['product_id'];
                                 $select_products = "select * from `products` where product_id = '$product_id'";
+                                $result_products = mysqli_query($connect, $select_products);
+                                
                             }
                             ?>
                             <tr>
