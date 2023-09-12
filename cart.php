@@ -116,6 +116,7 @@ include('./functions/functionsToUse.php');
                                     $quantities = $_POST['quantity'];
                                     $update_cart = "update `cart_details` set quantity = $quantities where ip_address = $get_ip_add";
                                     $result_products = mysqli_query($connect, $update_cart);
+                                    $total_price = $total_price * $quantities;
                                 }
                                 ?>
                                 <td><?php echo $price_table?>/-</td>
