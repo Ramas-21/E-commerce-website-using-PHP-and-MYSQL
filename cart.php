@@ -123,7 +123,7 @@ include('./functions/functionsToUse.php');
                                 <td><input type="checkbox"></td>
                                 <td>
                                     <input type="submit" value="Update cart" class="bg-info px-3 py-2 border-0 mx-3" name="update_cart">
-                                    <p>Remove</p>
+                                    <input type="submit" value="Remove cart" class="bg-info px-3 py-2 border-0 mx-3" name="remove_cart">
                                 </td>
                             </tr>
                         </tbody>
