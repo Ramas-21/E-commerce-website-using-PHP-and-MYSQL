@@ -92,35 +92,38 @@ include('./functions/functionsToUse.php');
                             $total_price = 0;
                             $cart_query = "select * from `cart_details` where ip_address = '$get_ip_add'";
                             $result = mysqli_query($connect, $cart_query);
-                            while($row = mysqli_fetch_array($result)){
-                                $product_id = $row['product_id'];
-                                $select_products = "select * from `products` where product_id = '$product_id'";
-                                $result_products = mysqli_query($connect, $select_products);
-                                while($row_product_price = mysqli_fetch_array($result_products)){
-                                    $productPrice = array($row_product_price['product_price']);
-                                    $price_table = $row_product_price['product_price'];
-                                    $productName = $row_product_price['product_name'];
-                                    $productImage1 = $row_product_price['product_image1'];
-                                    $product_values = array_sum($productPrice);
-                                    $total_price += $product_values;
+                            $result_count = mysqli_num_rows($result);
+                            if ($result_count > 0) {
+                                while ($row = mysqli_fetch_array($result)) {
+                                    $product_id = $row['product_id'];
+                                    $select_products = "select * from `products` where product_id = '$product_id'";
+                                    $result_products = mysqli_query($connect, $select_products);
+                                    while ($row_product_price = mysqli_fetch_array($result_products)) {
+                                        $productPrice = array($row_product_price['product_price']);
+                                        $price_table = $row_product_price['product_price'];
+                                        $productName = $row_product_price['product_name'];
+                                        $productImage1 = $row_product_price['product_image1'];
+                                        $product_values = array_sum($productPrice);
+                                        $total_price += $product_values;
+                                    }
                                 }
                             }
                             ?>
                             <tr>
-                                <td><?php echo $productName?></td>
-                                <td><img src="./admin_section/product_images/<?php echo $productImage1?>" alt="#" class="cart_img"></td>
-                                <td><input type="text"name="quantity" class="form-input w-50"></td>
+                                <td><?php echo $productName ?></td>
+                                <td><img src="./admin_section/product_images/<?php echo $productImage1 ?>" alt="#" class="cart_img"></td>
+                                <td><input type="text" name="quantity" class="form-input w-50"></td>
                                 <?php
                                 $get_ip_add = getIpAddress();
-                                if(isset($_POST['update_cart'])){
+                                if (isset($_POST['update_cart'])) {
                                     $quantities = $_POST['quantity'];
                                     $update_cart = "update `cart_details` set quantity = $quantities where ip_address = '$get_ip_add'";
                                     $result_products_quantity = mysqli_query($connect, $update_cart);
                                     $total_price = $total_price * $quantities;
                                 }
                                 ?>
-                                <td><?php echo $price_table?>/-</td>
-                                <td><input type="checkbox" name="removeItem[]" value="<?php echo $product_id?>"></td>
+                                <td><?php echo $price_table ?>/-</td>
+                                <td><input type="checkbox" name="removeItem[]" value="<?php echo $product_id ?>"></td>
                                 <td>
                                     <input type="submit" value="Update cart" class="bg-info px-3 py-2 border-0 mx-3" name="update_cart">
                                     <input type="submit" value="Remove cart" class="bg-info px-3 py-2 border-0 mx-3" name="remove_cart">
@@ -129,7 +132,7 @@ include('./functions/functionsToUse.php');
                         </tbody>
                     </table>
                     <div class="d-flex mb-5">
-                        <h4 class="px-3">Subtotal:<strong class="text-info"><?php echo $total_price?>/-</strong></h4>
+                        <h4 class="px-3">Subtotal:<strong class="text-info"><?php echo $total_price ?>/-</strong></h4>
                         <a href="index.php"><button class="bg-info px-3 py-2 border-0 mx-3">Continue shopping</button></a>
                         <a href="#"><button class="bg-secondary p-3 py-2 border-0 text-light">Checkout</button></a>
                     </div>
@@ -139,14 +142,15 @@ include('./functions/functionsToUse.php');
 
         <!------------ function to remove items ---------->
         <?php
-        function remove_cart_item(){
+        function remove_cart_item()
+        {
             global $connect;
-            if(isset($_POST['remove_cart'])){
-                foreach($_POST['removeItem'] as $remove_id){
+            if (isset($_POST['remove_cart'])) {
+                foreach ($_POST['removeItem'] as $remove_id) {
                     echo $remove_id;
                     $delete_query = "DELETE FROM `cart_details` WHERE product_id = $remove_id";
                     $run_delete = mysqli_query($connect, $delete_query);
-                    if($run_delete){
+                    if ($run_delete) {
                         echo "<script>window.open('cart.php',_self)</script>";
                     }
                 }
