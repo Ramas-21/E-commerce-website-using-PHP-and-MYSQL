@@ -144,7 +144,7 @@ include('./functions/functionsToUse.php');
             if(isset($_POST['remove_cart'])){
                 foreach($_POST['removeItem'] as $remove_id){
                     echo $remove_id;
-                    
+                    $delete_query = "DELETE FROM `cart_details` WHERE product_id = $remove_id";
                 }
             }
         }
