@@ -145,9 +145,14 @@ include('./functions/functionsToUse.php');
                 foreach($_POST['removeItem'] as $remove_id){
                     echo $remove_id;
                     $delete_query = "DELETE FROM `cart_details` WHERE product_id = $remove_id";
+                    $run_delete = mysqli_query($connect, $delete_query);
+                    if($run_delete){
+                        echo "<script>window.open('cart.php',_self)</script>";
+                    }
                 }
             }
         }
+        echo $remove_item = remove_cart_item();
         ?>
         <!---------------------- footer ------------------>
         <?php include('./includes/footer.php') ?>
