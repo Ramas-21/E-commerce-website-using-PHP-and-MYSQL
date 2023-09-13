@@ -74,61 +74,64 @@ include('./functions/functionsToUse.php');
             <div class="row">
                 <form action="#" method="post">
                     <table class="table table-bordered text-center">
-                        <thead>
-                            <tr>
-                                <th>Product Title</th>
-                                <th>Product Image</th>
-                                <th>Quantity</th>
-                                <th>Total Price</th>
-                                <th>Remove</th>
-                                <th>Operations</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!--------- PHP CODE TO DISPLAY DYNAMIC DATA ------>
-                            <?php
-                            global $connect;
-                            $get_ip_add = getIpAddress();
-                            $total_price = 0;
-                            $cart_query = "select * from `cart_details` where ip_address = '$get_ip_add'";
-                            $result = mysqli_query($connect, $cart_query);
-                            $result_count = mysqli_num_rows($result);
-                            if ($result_count > 0) {
-                                while ($row = mysqli_fetch_array($result)) {
-                                    $product_id = $row['product_id'];
-                                    $select_products = "select * from `products` where product_id = '$product_id'";
-                                    $result_products = mysqli_query($connect, $select_products);
-                                    while ($row_product_price = mysqli_fetch_array($result_products)) {
-                                        $productPrice = array($row_product_price['product_price']);
-                                        $price_table = $row_product_price['product_price'];
-                                        $productName = $row_product_price['product_name'];
-                                        $productImage1 = $row_product_price['product_image1'];
-                                        $product_values = array_sum($productPrice);
-                                        $total_price += $product_values;
-                                    }
+                        <!--------- PHP CODE TO DISPLAY DYNAMIC DATA ------>
+                        <?php
+                        global $connect;
+                        $get_ip_add = getIpAddress();
+                        $total_price = 0;
+                        $cart_query = "select * from `cart_details` where ip_address = '$get_ip_add'";
+                        $result = mysqli_query($connect, $cart_query);
+                        $result_count = mysqli_num_rows($result);
+                        if ($result_count > 0) {
+                            echo "<thead>
+                                <tr>
+                                    <th>Product Title</th>
+                                    <th>Product Image</th>
+                                    <th>Quantity</th>
+                                    <th>Total Price</th>
+                                    <th>Remove</th>
+                                    <th>Operations</th>
+                                </tr>
+                            </thead>
+                            <tbody>";
+                            while ($row = mysqli_fetch_array($result)) {
+                                $product_id = $row['product_id'];
+                                $select_products = "select * from `products` where product_id = '$product_id'";
+                                $result_products = mysqli_query($connect, $select_products);
+                                while ($row_product_price = mysqli_fetch_array($result_products)) {
+                                    $productPrice = array($row_product_price['product_price']);
+                                    $price_table = $row_product_price['product_price'];
+                                    $productName = $row_product_price['product_name'];
+                                    $productImage1 = $row_product_price['product_image1'];
+                                    $product_values = array_sum($productPrice);
+                                    $total_price += $product_values;
                                 }
                             }
+                        }
+                        else {
+                            echo "<h2 class='text-center text-danger'>Cart is empty</h2>";
+                        }
+                        ?>
+                        <tr>
+                            <td><?php echo $productName ?></td>
+                            <td><img src="./admin_section/product_images/<?php echo $productImage1 ?>" alt="#" class="cart_img"></td>
+                            <td><input type="text" name="quantity" class="form-input w-50"></td>
+                            <?php
+                            $get_ip_add = getIpAddress();
+                            if (isset($_POST['update_cart'])) {
+                                $quantities = $_POST['quantity'];
+                                $update_cart = "update `cart_details` set quantity = $quantities where ip_address = '$get_ip_add'";
+                                $result_products_quantity = mysqli_query($connect, $update_cart);
+                                $total_price = $total_price * $quantities;
+                            }
                             ?>
-                            <tr>
-                                <td><?php echo $productName ?></td>
-                                <td><img src="./admin_section/product_images/<?php echo $productImage1 ?>" alt="#" class="cart_img"></td>
-                                <td><input type="text" name="quantity" class="form-input w-50"></td>
-                                <?php
-                                $get_ip_add = getIpAddress();
-                                if (isset($_POST['update_cart'])) {
-                                    $quantities = $_POST['quantity'];
-                                    $update_cart = "update `cart_details` set quantity = $quantities where ip_address = '$get_ip_add'";
-                                    $result_products_quantity = mysqli_query($connect, $update_cart);
-                                    $total_price = $total_price * $quantities;
-                                }
-                                ?>
-                                <td><?php echo $price_table ?>/-</td>
-                                <td><input type="checkbox" name="removeItem[]" value="<?php echo $product_id ?>"></td>
-                                <td>
-                                    <input type="submit" value="Update cart" class="bg-info px-3 py-2 border-0 mx-3" name="update_cart">
-                                    <input type="submit" value="Remove cart" class="bg-info px-3 py-2 border-0 mx-3" name="remove_cart">
-                                </td>
-                            </tr>
+                            <td><?php echo $price_table ?>/-</td>
+                            <td><input type="checkbox" name="removeItem[]" value="<?php echo $product_id ?>"></td>
+                            <td>
+                                <input type="submit" value="Update cart" class="bg-info px-3 py-2 border-0 mx-3" name="update_cart">
+                                <input type="submit" value="Remove cart" class="bg-info px-3 py-2 border-0 mx-3" name="remove_cart">
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                     <div class="d-flex mb-5">
