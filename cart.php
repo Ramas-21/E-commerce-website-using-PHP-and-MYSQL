@@ -136,6 +136,16 @@ include('./functions/functionsToUse.php');
             </div>
         </div>
         </form>
+
+        <!------------ function to remove items ---------->
+        <?php
+        function remove_cart_item(){
+            global $connect;
+            if(isset($_POST['remove_cart'])){
+                
+            }
+        }
+        ?>
         <!---------------------- footer ------------------>
         <?php include('./includes/footer.php') ?>
     </div>
