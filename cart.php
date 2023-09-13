@@ -107,8 +107,7 @@ include('./functions/functionsToUse.php');
                                     $total_price += $product_values;
                                 }
                             }
-                        }
-                        else {
+                        } else {
                             echo "<h2 class='text-center text-danger'>Cart is empty</h2>";
                         }
                         ?>
@@ -135,9 +134,18 @@ include('./functions/functionsToUse.php');
                         </tbody>
                     </table>
                     <div class="d-flex mb-5">
-                        <h4 class="px-3">Subtotal:<strong class="text-info"><?php echo $total_price ?>/-</strong></h4>
-                        <a href="index.php"><button class="bg-info px-3 py-2 border-0 mx-3">Continue shopping</button></a>
-                        <a href="#"><button class="bg-secondary p-3 py-2 border-0 text-light">Checkout</button></a>
+                        <?php
+                        $get_ip_add = getIpAddress();
+                        $total_price = 0;
+                        $cart_query = "select * from `cart_details` where ip_address = '$get_ip_add'";
+                        $result = mysqli_query($connect, $cart_query);
+                        $result_count = mysqli_num_rows($result);
+                        if ($result_count > 0) {
+                            echo "<h4 class='px-3'>Subtotal:<strong class='text-info'>$total_price/-</strong></h4>
+                            <a href='index.php'><button class='bg-info px-3 py-2 border-0 mx-3'>Continue shopping</button></a>
+                            <a href='#'><button class='bg-secondary p-3 py-2 border-0 text-light'>Checkout</button></a>'";
+                        }
+                        ?>
                     </div>
             </div>
         </div>
