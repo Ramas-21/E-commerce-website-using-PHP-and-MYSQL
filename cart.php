@@ -108,7 +108,7 @@ include('./functions/functionsToUse.php');
                             ?>
                             <tr>
                                 <td><?php echo $productName?></td>
-                                <td><img src="./images/<?php echo $productImage1?>" alt="#" class="cart_img"></td>
+                                <td><img src="./admin_section/product_images/<?php echo $productImage1?>" alt="#" class="cart_img"></td>
                                 <td><input type="text"name="quantity" class="form-input w-50"></td>
                                 <?php
                                 $get_ip_add = getIpAddress();
