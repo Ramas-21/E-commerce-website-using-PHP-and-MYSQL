@@ -142,7 +142,10 @@ include('./functions/functionsToUse.php');
         function remove_cart_item(){
             global $connect;
             if(isset($_POST['remove_cart'])){
-                
+                foreach($_POST['removeItem'] as $remove_id){
+                    echo $remove_id;
+                    
+                }
             }
         }
         ?>
