@@ -141,7 +141,7 @@ include('./functions/functionsToUse.php');
                         $result_count = mysqli_num_rows($result);
                         if ($result_count > 0) {
                             echo "<h4 class='px-3'>Subtotal:<strong class='text-info'>$total_price/-</strong></h4>
-                            <a href='index.php'><button class='bg-info px-3 py-2 border-0 mx-3'>Continue shopping</button></a>
+                            <input type='submit' value='continue shopping' class='bg-info px-3 py-2 border-0 mx-3' name='continue_shopping'>
                             <a href='#'><button class='bg-secondary p-3 py-2 border-0 text-light'>Checkout</button></a>'";
                         }
                         else {
