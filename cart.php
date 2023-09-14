@@ -147,6 +147,9 @@ include('./functions/functionsToUse.php');
                         else {
                             echo "<input type='submit' value='continue shopping' class='bg-info px-3 py-2 border-0 mx-3' name='continue_shopping'>";
                         }
+                        if(isset($_POST['continue_shopping'])){
+                            echo "<script>window.open('index.php'),'_self'</script>";
+                        }
                         ?>
                     </div>
             </div>
@@ -164,7 +167,7 @@ include('./functions/functionsToUse.php');
                     $delete_query = "DELETE FROM `cart_details` WHERE product_id = $remove_id";
                     $run_delete = mysqli_query($connect, $delete_query);
                     if ($run_delete) {
-                        echo "<script>window.open('cart.php',_self)</script>";
+                        echo "<script>window.open('cart.php',_self)</script1>";
                     }
                 }
             }
