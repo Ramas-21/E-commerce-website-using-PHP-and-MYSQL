@@ -142,7 +142,7 @@ include('./functions/functionsToUse.php');
                         if ($result_count > 0) {
                             echo "<h4 class='px-3'>Subtotal:<strong class='text-info'>$total_price/-</strong></h4>
                             <input type='submit' value='continue shopping' class='bg-info px-3 py-2 border-0 mx-3' name='continue_shopping'>
-                            <button class='bg-secondary p-3 py-2 border-0'><a href='checkout.php' class='text-light'>Checkout</a></button>
+                            <button class='bg-secondary p-3 py-2 border-0'><a href='checkout.php' class='text-light'>Checkout</a></button>";
                         }
                         else {
                             echo "<input type='submit' value='continue shopping' class='bg-info px-3 py-2 border-0 mx-3' name='continue_shopping'>";
@@ -167,7 +167,7 @@ include('./functions/functionsToUse.php');
                     $delete_query = "DELETE FROM `cart_details` WHERE product_id = $remove_id";
                     $run_delete = mysqli_query($connect, $delete_query);
                     if ($run_delete) {
-                        echo "<script>window.open('cart.php',_self)</script1>";
+                        echo "<script>window.open('cart.php',_self)</script>";
                     }
                 }
             }
