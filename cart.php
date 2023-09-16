@@ -112,7 +112,7 @@ include('./functions/functionsToUse.php');
                         }
                         ?>
                         <tr>
-                            <td><?php echo $productName ?></td>
+                            <td><?php echo $productName?></td>
                             <td><img src="./admin_section/product_images/<?php echo $productImage1 ?>" alt="#" class="cart_img"></td>
                             <td><input type="text" name="quantity" class="form-input w-50"></td>
                             <?php
@@ -142,7 +142,7 @@ include('./functions/functionsToUse.php');
                         if ($result_count > 0) {
                             echo "<h4 class='px-3'>Subtotal:<strong class='text-info'>$total_price/-</strong></h4>
                             <input type='submit' value='continue shopping' class='bg-info px-3 py-2 border-0 mx-3' name='continue_shopping'>
-                            <button class='bg-secondary p-3 py-2 border-0'><a href='checkout.php' class='text-light'>Checkout</a></button>";
+                            <button class='bg-secondary p-3 py-2 border-0'><a href='checkout.php' class='text-light text-decoration-none'>Checkout</a></button>";
                         }
                         else {
                             echo "<input type='submit' value='continue shopping' class='bg-info px-3 py-2 border-0 mx-3' name='continue_shopping'>";
