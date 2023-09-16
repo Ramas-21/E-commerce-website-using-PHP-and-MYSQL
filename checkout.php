@@ -74,7 +74,7 @@ include('includes/connect.php');
                     <?php
                     // using sessions
                     if(!isset($_SESSION['username'])){
-                        include()
+                        include('users_section/user_login.php');
                     }
                     ?>
                 </div>
