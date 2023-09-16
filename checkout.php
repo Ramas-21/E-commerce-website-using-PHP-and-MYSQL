@@ -76,6 +76,9 @@ include('includes/connect.php');
                     if(!isset($_SESSION['username'])){
                         include('users_section/user_login.php');
                     }
+                    else{
+                        include('payment.php');
+                    }
                     ?>
                 </div>
             </div>
