@@ -68,7 +68,7 @@ include('includes/connect.php');
 
 
         <div class="row px-1">
-            <div class="col-md-10">
+            <div class="col-md-12">
                 <!---------- products ----------->
                 <div class="row">
                     
