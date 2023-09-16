@@ -71,7 +71,12 @@ include('includes/connect.php');
             <div class="col-md-12">
                 <!---------- products ----------->
                 <div class="row">
-                    
+                    <?php
+                    // using sessions
+                    if(!isset($_SESSION['username'])){
+                        include()
+                    }
+                    ?>
                 </div>
             </div>
         </div>
