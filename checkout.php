@@ -49,10 +49,6 @@ include('includes/connect.php');
                 </div>
             </div>
         </nav>
-        <?php
-        cart();
-        ?>
-
         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
@@ -75,41 +71,8 @@ include('includes/connect.php');
             <div class="col-md-10">
                 <!---------- products ----------->
                 <div class="row">
-                    <!----------- fetching products ------------->
-                    <?php
-                    getProducts();
-                    getUniqueCategories();
-                    getUniqueBrands();
-                    // $ip = getIpAddress();
-                    // echo 'User Real Ip Address-'.$ip;
-                    ?>
+                    
                 </div>
-            </div>
-            <div class="col-md-2 bg-secondary p-0">
-                <!---------sidenav--------------->
-                <ul class="navbar-nav me-auto text-center">
-                    <li class="nav-item bg-info">
-                        <a href="#" class="nav-link text-light">
-                            <h6>Delivery Brands</h6>
-                        </a>
-                    </li>
-
-                    <?php
-                    getBrands();
-                    ?>
-                </ul>
-
-                <ul class="navbar-nav me-auto text-center">
-                    <li class="nav-item bg-info">
-                        <a href="#" class="nav-link text-light">
-                            <h6>Categories</h6>
-                        </a>
-                    </li>
-
-                    <?php
-                    getCategories();
-                    ?>
-                </ul>
             </div>
         </div>
 
