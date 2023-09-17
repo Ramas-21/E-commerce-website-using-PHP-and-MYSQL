@@ -29,7 +29,7 @@
                         <input type="file" id="user_image" class="form-control" required name="user_image">
                     </div>
                     <div class="form-outline">
-                        <label for="user_password" class="form-label">Pass7</label>
+                        <label for="user_password" class="form-label">Password</label>
                         <input type="password" id="user_password" class="form-control" placeholder="Enter your password" autocomplete="off" required name="user_password">
                     </div>
                     <div class="form-outline">
