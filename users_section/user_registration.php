@@ -15,7 +15,7 @@
         <h2 class="text-center">Register</h2>
         <div class="row">
             <div class="col-lg-12 col-xl-6">
-                
+                <form action="#" method="post" enctype="multipart/form-data"></form>
             </div>
         </div>
     </div>
