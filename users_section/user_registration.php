@@ -11,8 +11,13 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        
+    <div class="container-fluid my-3">
+        <h2 class="text-center">Register</h2>
+        <div class="row">
+            <div class="col-lg-12 col-xl-6">
+                
+            </div>
+        </div>
     </div>
 </body>
 
