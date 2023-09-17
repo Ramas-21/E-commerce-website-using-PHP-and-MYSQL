@@ -13,9 +13,30 @@
 <body>
     <div class="container-fluid my-3">
         <h2 class="text-center">Register</h2>
-        <div class="row">
+        <div class="row d-flex align-items-center justify-content-center">
             <div class="col-lg-12 col-xl-6">
-                <form action="#" method="post" enctype="multipart/form-data"></form>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="form-outline mb-4">
+                        <label for="user_username" class="form-label">Username</label>
+                        <input type="text" id="user_username" class="form-control" placeholder="Enter your username" autocomplete="off" required name="user_username">
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label for="userEmail" class="form-label">Email</label>
+                        <input type="email" id="userEmail" class="form-control" placeholder="Enter your email" autocomplete="off" required="required" name="userEmail">
+                    </div>
+                    <div class="form-outline">
+                        <label for="user_username" class="form-label">Username</label>
+                        <input type="text" id="user_username" class="form-control" placeholder="Enter your username" autocomplete="off" required name="user_username">
+                    </div>
+                    <div class="form-outline">
+                        <label for="user_username" class="form-label">Username</label>
+                        <input type="text" id="user_username" class="form-control" placeholder="Enter your username" autocomplete="off" required name="user_username">
+                    </div>
+                    <div class="form-outline">
+                        <label for="user_username" class="form-label">Username</label>
+                        <input type="text" id="user_username" class="form-control" placeholder="Enter your username" autocomplete="off" required name="user_username">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
