@@ -13,7 +13,7 @@
 <body>
     <div class="container-fluid my-3">
         <h2 class="text-center">Login</h2>
-        <div class="row d-flex align-items-center justify-content-center">
+        <div class="row d-flex align-items-center justify-content-center mt-5">
             <div class="col-lg-12 col-xl-6">
                 <form action="#" method="post" enctype="multipart/form-data">
                     <div class="form-outline mb-4">
