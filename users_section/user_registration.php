@@ -69,5 +69,6 @@ if(isset($_POST['user_register'])){
     $user_mobile = $_POST['user_mobile'];
     $user_image = $_FILES['user_image']['name'];
     $user_image_temp = $_FILES['user_image']['tmp_name'];
+    $user_ip = getIpAddress();
 }
 ?>
