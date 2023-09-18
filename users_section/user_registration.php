@@ -21,11 +21,11 @@ include('../includes/connect.php');
                 <form action="#" method="post" enctype="multipart/form-data">
                     <div class="form-outline mb-4">
                         <label for="user_username" class="form-label">Username</label>
-                        <input type="text" id="user_username" class="form-control" placeholder="Enter your username" autocomplete="off" required name="user_username">
+                        <input type="text" id="user_username" class="form-control" placeholder="Enter your username" autocomplete="off" required name="username">
                     </div>
                     <div class="form-outline mb-4">
                         <label for="userEmail" class="form-label">Email</label>
-                        <input type="email" id="userEmail" class="form-control" placeholder="Enter your email" autocomplete="off" required="required" name="userEmail">
+                        <input type="email" id="userEmail" class="form-control" placeholder="Enter your email" autocomplete="off" required="required" name="user_email">
                     </div>
                     <div class="form-outline mb-4">
                         <label for="user_image" class="form-label">image</label>
@@ -45,7 +45,7 @@ include('../includes/connect.php');
                     </div>
                     <div class="form-outline mb-4">
                         <label for="user_contact" class="form-label">Contact</label>
-                        <input type="text" id="user_contact" class="form-control" placeholder="Enter your contact" autocomplete="off" required name="user_contact">
+                        <input type="text" id="user_contact" class="form-control" placeholder="Enter your contact" autocomplete="off" required name="user_mobile">
                     </div>
                     <div class="text-center mt-4 pt-2">
                         <input type="submit" value="Register" class="bg-info py-2 px-3 border-0" name="user_register">
@@ -61,6 +61,6 @@ include('../includes/connect.php');
 
 <?php
 if(isset($_POST['user_register'])){
-    
+
 }
 ?>
