@@ -66,7 +66,7 @@ include('./functions/functionsToUse.php');
                     <a href="#" class="nav-link">Welcome Guest</a>
                 </li>
                 <li class="nav-item"></li>
-                <a href="#" class="nav-link">Login</a>
+                <a href="./users_section/user_login.php" class="nav-link">Login</a>
                 </li>
             </ul>
         </nav>
