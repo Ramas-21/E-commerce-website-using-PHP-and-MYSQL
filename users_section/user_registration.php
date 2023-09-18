@@ -61,7 +61,7 @@ include('../functions/functionsToUse.php');
 </html>
 
 <?php
-if(isset($_POST['user_register'])){
+if (isset($_POST['user_register'])) {
     $user_name = $_POST['username'];
     $user_email = $_POST['user_email'];
     $user_password = $_POST['user_password'];
@@ -71,5 +71,13 @@ if(isset($_POST['user_register'])){
     $user_image = $_FILES['user_image']['name'];
     $user_image_temp = $_FILES['user_image']['tmp_name'];
     $user_ip = getIpAddress();
+
+    $insert_query = "INSERT INTO `users`(username,user_email,user_password,user_image,user_ip,user_address,user_mobile) VALUES ('$user_name','$user_email','$user_password','$user_image','$user_ip','$user_address','$user_mobile')";
+    $result = mysqli_query($connect, $insert_query);
+    if ($result) {
+        echo "<script>alert('Inserted successfully')</script>";
+    } else {
+        die(mysqli_connect_error($result));
+    }
 }
 ?>
