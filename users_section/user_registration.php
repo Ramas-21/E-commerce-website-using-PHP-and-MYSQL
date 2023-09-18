@@ -73,7 +73,7 @@ if (isset($_POST['user_register'])) {
     $user_ip = getIpAddress();
 
     $insert_query = "INSERT INTO `users`(username,user_email,user_password,user_image,user_ip,user_address,user_mobile) VALUES ('$user_name','$user_email','$user_password','$user_image','$user_ip','$user_address','$user_mobile')";
-    $result = mysqli_query($connect, $insert_query);
+    $execute = mysqli_query($connect, $insert_query);
     if ($result) {
         echo "<script>alert('Inserted successfully')</script>";
     } else {
