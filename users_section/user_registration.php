@@ -36,6 +36,10 @@
                         <label for="confirm_password" class="form-label">Confirm Password</label>
                         <input type="password" id="confirm_password" class="form-control" placeholder="Confirm your username" autocomplete="off" required name="confirm_password">
                     </div>
+                    <div class="form-outline">
+                        <label for="user_address" class="form-label">Address</label>
+                        <input type="text" id="user_address" class="form-control" placeholder="Enter your address" autocomplete="off" required name="user_address">
+                    </div>
                 </form>
             </div>
         </div>
