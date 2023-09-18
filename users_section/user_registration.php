@@ -40,6 +40,10 @@
                         <label for="user_address" class="form-label">Address</label>
                         <input type="text" id="user_address" class="form-control" placeholder="Enter your address" autocomplete="off" required name="user_address">
                     </div>
+                    <div class="form-outline">
+                        <label for="user_contact" class="form-label">Contact</label>
+                        <input type="text" id="user_contact" class="form-control" placeholder="Enter your contact" autocomplete="off" required name="user_contact">
+                    </div>
                 </form>
             </div>
         </div>
