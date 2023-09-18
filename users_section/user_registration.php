@@ -24,26 +24,27 @@
                         <label for="userEmail" class="form-label">Email</label>
                         <input type="email" id="userEmail" class="form-control" placeholder="Enter your email" autocomplete="off" required="required" name="userEmail">
                     </div>
-                    <div class="form-outline">
+                    <div class="form-outline mb-4">
                         <label for="user_image" class="form-label">image</label>
                         <input type="file" id="user_image" class="form-control" required name="user_image">
                     </div>
-                    <div class="form-outline">
+                    <div class="form-outline mb-4">
                         <label for="user_password" class="form-label">Password</label>
                         <input type="password" id="user_password" class="form-control" placeholder="Enter your password" autocomplete="off" required name="user_password">
                     </div>
-                    <div class="form-outline">
+                    <div class="form-outline mb-4">
                         <label for="confirm_password" class="form-label">Confirm Password</label>
                         <input type="password" id="confirm_password" class="form-control" placeholder="Confirm your username" autocomplete="off" required name="confirm_password">
                     </div>
-                    <div class="form-outline">
+                    <div class="form-outline mb-4">
                         <label for="user_address" class="form-label">Address</label>
                         <input type="text" id="user_address" class="form-control" placeholder="Enter your address" autocomplete="off" required name="user_address">
                     </div>
-                    <div class="form-outline">
+                    <div class="form-outline mb-4">
                         <label for="user_contact" class="form-label">Contact</label>
                         <input type="text" id="user_contact" class="form-control" placeholder="Enter your contact" autocomplete="off" required name="user_contact">
                     </div>
+
                 </form>
             </div>
         </div>
