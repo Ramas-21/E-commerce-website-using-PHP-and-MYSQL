@@ -21,28 +21,8 @@
                         <input type="text" id="user_username" class="form-control" placeholder="Enter your username" autocomplete="off" required name="user_username">
                     </div>
                     <div class="form-outline mb-4">
-                        <label for="userEmail" class="form-label">Email</label>
-                        <input type="email" id="userEmail" class="form-control" placeholder="Enter your email" autocomplete="off" required="required" name="userEmail">
-                    </div>
-                    <div class="form-outline mb-4">
-                        <label for="user_image" class="form-label">image</label>
-                        <input type="file" id="user_image" class="form-control" required name="user_image">
-                    </div>
-                    <div class="form-outline mb-4">
                         <label for="user_password" class="form-label">Password</label>
                         <input type="password" id="user_password" class="form-control" placeholder="Enter your password" autocomplete="off" required name="user_password">
-                    </div>
-                    <div class="form-outline mb-4">
-                        <label for="confirm_password" class="form-label">Confirm Password</label>
-                        <input type="password" id="confirm_password" class="form-control" placeholder="Confirm your username" autocomplete="off" required name="confirm_password">
-                    </div>
-                    <div class="form-outline mb-4">
-                        <label for="user_address" class="form-label">Address</label>
-                        <input type="text" id="user_address" class="form-control" placeholder="Enter your address" autocomplete="off" required name="user_address">
-                    </div>
-                    <div class="form-outline mb-4">
-                        <label for="user_contact" class="form-label">Contact</label>
-                        <input type="text" id="user_contact" class="form-control" placeholder="Enter your contact" autocomplete="off" required name="user_contact">
                     </div>
                     <div class="text-center mt-4 pt-2">
                         <input type="submit" value="Register" class="bg-info py-2 px-3 border-0" name="user_register">
