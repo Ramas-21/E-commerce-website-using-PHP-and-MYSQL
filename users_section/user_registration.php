@@ -74,10 +74,6 @@ if (isset($_POST['user_register'])) {
 
     $insert_query = "INSERT INTO `users`(username,user_email,user_password,user_image,user_ip,user_address,user_mobile) VALUES ('$user_name','$user_email','$user_password','$user_image','$user_ip','$user_address','$user_mobile')";
     $execute = mysqli_query($connect, $insert_query);
-    if ($result) {
-        echo "<script>alert('Inserted successfully')</script>";
-    } else {
-        die(mysqli_connect_error($result));
-    }
+    move_uploaded_file($user_image_temp, "./user_images/$user_image");
 }
 ?>
