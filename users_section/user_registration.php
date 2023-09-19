@@ -78,6 +78,8 @@ if (isset($_POST['user_register'])) {
     $rows_count = mysqli_num_rows($result_select_query);
     if($rows_count > 0){
         echo "<script>alert('Username and email already exists.')</script>";
+    }else if($user_password != $confirm_password){
+        echo "<script>alert('Password do not match.')</script>";
     }
     else{
          // insert query
