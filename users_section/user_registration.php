@@ -73,11 +73,11 @@ if (isset($_POST['user_register'])) {
     $user_ip = getIpAddress();
 
     // select query
-    $select_query = "SELECT * FROM `users` WHERE username = '$user_name'";
+    $select_query = "SELECT * FROM `users` WHERE username = '$user_name' or user_email = '$user_email'";
     $result_select_query = mysqli_query($connect, $select_query);
     $rows_count = mysqli_num_rows($result_select_query);
     if($rows_count > 0){
-        echo "<script>alert('Username already exists.')</script>";
+        echo "<script>alert('Username and email already exists.')</script>";
     }
     else{
          // insert query
