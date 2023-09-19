@@ -74,6 +74,7 @@ if (isset($_POST['user_register'])) {
 
     // select query
     $select_query = "SELECT * FROM `users` WHERE username = '$user_name'";
+    $result_select_query = mysqli_query($connect, $select_query);
     // insert query
     $insert_query = "INSERT INTO `users`(username,user_email,user_password,user_image,user_ip,user_address,user_mobile) VALUES ('$user_name','$user_email','$user_password','$user_image','$user_ip','$user_address','$user_mobile')";
     $execute = mysqli_query($connect, $insert_query);
