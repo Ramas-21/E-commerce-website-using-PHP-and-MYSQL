@@ -65,6 +65,7 @@ if (isset($_POST['user_register'])) {
     $user_name = $_POST['username'];
     $user_email = $_POST['user_email'];
     $user_password = $_POST['user_password'];
+    $hash_password = password_hash($user_password,PASSWORD_DEFAULT);
     $confirm_password = $_POST['confirm_password'];
     $user_address = $_POST['user_address'];
     $user_mobile = $_POST['user_mobile'];
@@ -83,7 +84,7 @@ if (isset($_POST['user_register'])) {
     }
     else{
          // insert query
-    $insert_query = "INSERT INTO `users`(username,user_email,user_password,user_image,user_ip,user_address,user_mobile) VALUES ('$user_name','$user_email','$user_password','$user_image','$user_ip','$user_address','$user_mobile')";
+    $insert_query = "INSERT INTO `users`(username,user_email,user_password,user_image,user_ip,user_address,user_mobile) VALUES ('$user_name','$user_email','$hash_password','$user_image','$user_ip','$user_address','$user_mobile')";
     $execute = mysqli_query($connect, $insert_query);
     move_uploaded_file($user_image_temp, "./user_images/$user_image");
     }
