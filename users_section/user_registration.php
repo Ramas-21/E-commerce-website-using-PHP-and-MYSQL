@@ -73,7 +73,7 @@ if (isset($_POST['user_register'])) {
     $user_ip = getIpAddress();
 
     // select query
-    
+    $select_query = "SELECT * FROM `users` WHERE username = '$user_name'";
     // insert query
     $insert_query = "INSERT INTO `users`(username,user_email,user_password,user_image,user_ip,user_address,user_mobile) VALUES ('$user_name','$user_email','$user_password','$user_image','$user_ip','$user_address','$user_mobile')";
     $execute = mysqli_query($connect, $insert_query);
