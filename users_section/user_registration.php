@@ -79,15 +79,11 @@ if (isset($_POST['user_register'])) {
     if($rows_count > 0){
         echo "<script>alert('Username already exists.')</script>";
     }
-    // insert query
+    else{
+         // insert query
     $insert_query = "INSERT INTO `users`(username,user_email,user_password,user_image,user_ip,user_address,user_mobile) VALUES ('$user_name','$user_email','$user_password','$user_image','$user_ip','$user_address','$user_mobile')";
     $execute = mysqli_query($connect, $insert_query);
     move_uploaded_file($user_image_temp, "./user_images/$user_image");
-    if($execute){
-        echo "<script>alert('Data inserted successfully')</script>";
-    }
-    else {
-        die(mysqli_error($connect));
     }
 }
 ?>
