@@ -72,6 +72,9 @@ if (isset($_POST['user_register'])) {
     $user_image_temp = $_FILES['user_image']['tmp_name'];
     $user_ip = getIpAddress();
 
+    // select query
+    
+    // insert query
     $insert_query = "INSERT INTO `users`(username,user_email,user_password,user_image,user_ip,user_address,user_mobile) VALUES ('$user_name','$user_email','$user_password','$user_image','$user_ip','$user_address','$user_mobile')";
     $execute = mysqli_query($connect, $insert_query);
     move_uploaded_file($user_image_temp, "./user_images/$user_image");
