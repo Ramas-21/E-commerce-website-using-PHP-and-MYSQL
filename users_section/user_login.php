@@ -48,8 +48,9 @@ if(isset($_POST['user_login'])){
     $select_query = "SELECT * FROM `users` WHERE username = '$user_username'";
     $result = mysqli_query($connect, $select_query);
     $row_count = mysqli_num_rows($result);
+    $row_data = mysqli_fetch_assoc($result);
     if($row_count > 0){
-
+        if(password_verify($user_password,))
     }
     else{
         echo "<script>alert('Invalid credentials.')</script>"
