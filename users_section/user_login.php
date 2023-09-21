@@ -9,7 +9,11 @@
     <!------- font awesome link ------>
     <title>User login</title>
 </head>
-
+<style>
+    body {
+        overflow-x: hidden;
+    }
+</style>
 <body>
     <div class="container-fluid my-3">
         <h2 class="text-center">Login</h2>
