@@ -15,7 +15,7 @@
         <h2 class="text-center">Login</h2>
         <div class="row d-flex align-items-center justify-content-center mt-5">
             <div class="col-lg-12 col-xl-6">
-                <form action="#" method="post" enctype="multipart/form-data">
+                <form action="#" method="post">
                     <div class="form-outline mb-4">
                         <label for="user_username" class="form-label">Username</label>
                         <input type="text" id="user_username" class="form-control" placeholder="Enter your username" autocomplete="off" required name="user_username">
