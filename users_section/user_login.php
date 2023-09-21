@@ -51,11 +51,14 @@ if(isset($_POST['user_login'])){
     $row_data = mysqli_fetch_assoc($result);
     if($row_count > 0){
         if(password_verify($user_password,$row_data['user_password'])){
-            
+            echo "<script>alert('You have Logged in successful.')</script>";
+        }
+        else{
+            echo "<script>alert('Invalid credentials.')</script>";
         }
     }
     else{
-        echo "<script>alert('Invalid credentials.')</script>"
+        echo "<script>alert('Invalid credentials.')</script>";
     }
 }
 ?>
