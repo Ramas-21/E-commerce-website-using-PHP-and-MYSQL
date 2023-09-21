@@ -25,7 +25,7 @@
                         <input type="password" id="user_password" class="form-control" placeholder="Enter your password" autocomplete="off" required name="user_password">
                     </div>
                     <div class="text-center mt-4 pt-2">
-                        <input type="submit" value="Login" class="bg-info py-2 px-3 border-0" name="user_register">
+                        <input type="submit" value="Login" class="bg-info py-2 px-3 border-0" name="user_login">
                         <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="user_registration.php" class="text_danger">Register</a></p>
                     </div>
                 </form>
@@ -35,3 +35,7 @@
 </body>
 
 </html>
+
+<?php
+if(isset($_POST['']))
+?>
