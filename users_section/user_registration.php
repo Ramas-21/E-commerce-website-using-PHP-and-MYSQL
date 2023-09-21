@@ -88,5 +88,8 @@ if (isset($_POST['user_register'])) {
     $execute = mysqli_query($connect, $insert_query);
     move_uploaded_file($user_image_temp, "./user_images/$user_image");
     }
+
+    //selecting cart items
+    $select_cart_items = "SELECT * FROM `cart_details` WHERE ip_address = '$user_ip'";
 }
 ?>
