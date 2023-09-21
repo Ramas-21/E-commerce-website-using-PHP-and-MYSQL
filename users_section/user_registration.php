@@ -94,7 +94,7 @@ if (isset($_POST['user_register'])) {
     $result_cart = mysqli_query($connect, $select_cart_items);
     $rows_count = mysqli_num_rows($result_cart);
     if($rows_count > 0){
-        echo "<script></script>"
+        echo "<script>alert('You have items in your cart.')</script>";
     }
 }
 ?>
