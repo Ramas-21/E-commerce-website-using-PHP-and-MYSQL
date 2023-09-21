@@ -91,5 +91,6 @@ if (isset($_POST['user_register'])) {
 
     //selecting cart items
     $select_cart_items = "SELECT * FROM `cart_details` WHERE ip_address = '$user_ip'";
+    $result_cart = mysqli_query($connect, $select_cart_items);
 }
 ?>
