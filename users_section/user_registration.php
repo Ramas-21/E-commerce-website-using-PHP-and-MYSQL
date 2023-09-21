@@ -98,5 +98,8 @@ if (isset($_POST['user_register'])) {
         echo "<script>alert('You have items in your cart.')</script>";
         echo "<script>window.open('checkout.php','_self')</script>";
     }
+    else{
+        echo "<script>window.open('../index.php','_self')</script>";
+    }
 }
 ?>
