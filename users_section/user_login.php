@@ -46,5 +46,6 @@ if(isset($_POST['user_login'])){
     $user_password = $_POST['user_password'];
 
     $select_query = "SELECT * FROM `users` WHERE username = '$user_username'";
+    $result = mysqli_query($connect, $select_query);
 }
 ?>
