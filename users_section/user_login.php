@@ -38,6 +38,6 @@
 
 <?php
 if(isset($_POST['user_login'])){
-    
+    $user_name = $_POST['user_name'];
 }
 ?>
