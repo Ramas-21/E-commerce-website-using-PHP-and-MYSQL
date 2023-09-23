@@ -62,7 +62,11 @@ if(isset($_POST['user_login'])){
 
     if($count_row > 0){
         if(password_verify($user_password,$row_data['user_password'])){
-            echo "<script>alert('You have Logged in successful.')</script>";
+            //echo "<script>alert('You have Logged in successful.')</script>";
+            if($count_row == 1 and $count_row_cart == 0){
+                echo "<script>alert('You have Logged in successful.')</script>";
+                echo "<script>window.open('profile.php','_self')</script>";
+            }
         }
         else{
             echo "<script>alert('Invalid credentials.')</script>";
