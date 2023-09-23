@@ -53,6 +53,7 @@ if(isset($_POST['user_login'])){
     $result = mysqli_query($connect, $select_query);
     $count_row = mysqli_num_rows($result);
     $row_data = mysqli_fetch_assoc($result);
+    $user_ip = getIpAddress();
 
     // cart item 
     $select_query = "SELECT * FROM `cart_details` WHERE ip_address = '$user_ip'";
