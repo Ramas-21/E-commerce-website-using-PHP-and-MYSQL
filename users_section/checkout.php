@@ -77,7 +77,7 @@ include('../includes/connect.php');
                         include('user_login.php');
                     }
                     else{
-                        include('../payment.php');
+                        include('payment.php');
                     }
                     ?>
                 </div>
