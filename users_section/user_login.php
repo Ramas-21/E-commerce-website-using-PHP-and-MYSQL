@@ -58,6 +58,7 @@ if(isset($_POST['user_login'])){
     // cart item 
     $select_query_cart = "SELECT * FROM `cart_details` WHERE ip_address = '$user_ip'";
     $select_cart = mysqli_query($connect,$select_query_cart);
+    $count_row_cart= mysqli_num_rows($count_row_cart);
 
     if($count_row > 0){
         if(password_verify($user_password,$row_data['user_password'])){
