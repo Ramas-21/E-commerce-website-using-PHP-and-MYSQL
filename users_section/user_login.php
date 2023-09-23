@@ -67,6 +67,10 @@ if(isset($_POST['user_login'])){
                 echo "<script>alert('You have Logged in successful.')</script>";
                 echo "<script>window.open('profile.php','_self')</script>";
             }
+            else{
+                echo "<script>alert('You have Logged in successful.')</script>";
+                echo "<script>window.open('payment.php','_self')</script>";
+            }
         }
         else{
             echo "<script>alert('Invalid credentials.')</script>";
