@@ -12,6 +12,7 @@ include('../includes/connect.php');
     <!------- font awesome link ------>
     <title>User login</title>
 </head>
+
 <style>
     body {
         overflow-x: hidden;
@@ -52,7 +53,7 @@ if(isset($_POST['user_login'])){
     $result = mysqli_query($connect, $select_query);
     $row_count = mysqli_num_rows($result);
     $row_data = mysqli_fetch_assoc($result);
-    
+
     if($row_count > 0){
         if(password_verify($user_password,$row_data['user_password'])){
             echo "<script>alert('You have Logged in successful.')</script>";
