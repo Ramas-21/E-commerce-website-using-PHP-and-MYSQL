@@ -50,9 +50,9 @@ if(isset($_POST['user_login'])){
     $user_name = $_POST['user_username'];
     $user_password = $_POST['user_password'];
 
-    $select_query = "SELECT * FROM `users` WHERE user_username = '$user_name'";
+    $select_query = "SELECT * FROM `users` WHERE username = '$user_name'";
     $result = mysqli_query($connect, $select_query);
-    $count_row = mysqli_num_rows($result);
+    $row_count = mysqli_num_rows($result);
     $row_data = mysqli_fetch_assoc($result);
     $user_ip = getIpAddress();
 
@@ -61,10 +61,10 @@ if(isset($_POST['user_login'])){
     $select_cart = mysqli_query($connect,$select_query_cart);
     $count_row_cart= mysqli_num_rows($select_cart);
 
-    if($count_row > 0){
+    if($row_count > 0){
         if(password_verify($user_password,$row_data['user_password'])){
             //echo "<script>alert('You have Logged in successful.')</script>";
-            if($count_row == 1 and $count_row_cart == 0){
+            if($row_count == 1 and $count_row_cart == 0){
                 echo "<script>alert('You have Logged in successful.')</script>";
                 echo "<script>window.open('profile.php','_self')</script>";
             }
