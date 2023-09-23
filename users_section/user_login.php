@@ -51,10 +51,10 @@ if(isset($_POST['user_login'])){
 
     $select_query = "SELECT * FROM `users` WHERE user_username = '$user_name'";
     $result = mysqli_query($connect, $select_query);
-    $row_count = mysqli_num_rows($result);
+    $count_row = mysqli_num_rows($result);
     $row_data = mysqli_fetch_assoc($result);
 
-    if($row_count > 0){
+    if($count_row > 0){
         if(password_verify($user_password,$row_data['user_password'])){
             echo "<script>alert('You have Logged in successful.')</script>";
         }
