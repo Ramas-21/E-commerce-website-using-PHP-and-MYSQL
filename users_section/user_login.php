@@ -54,6 +54,9 @@ if(isset($_POST['user_login'])){
     $count_row = mysqli_num_rows($result);
     $row_data = mysqli_fetch_assoc($result);
 
+    // cart item 
+    $select_query = "SELECT * FROM `cart_details` WHERE ip_address = '$user_ip'";
+
     if($count_row > 0){
         if(password_verify($user_password,$row_data['user_password'])){
             echo "<script>alert('You have Logged in successful.')</script>";
