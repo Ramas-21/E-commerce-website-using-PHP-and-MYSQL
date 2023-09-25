@@ -18,6 +18,12 @@ include('./functions/functionsToUse.php');
     <link rel="stylesheet" href="style.css">
 </head>
 
+<style>
+    body {
+        overflow-x: hidden;
+    }
+</style>
+
 <body>
     <!--------- navbar -------->
     <div class="container-fluid p-0">
