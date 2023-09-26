@@ -65,9 +65,18 @@ session_start();
                 <li class="nav-item">
                     <a href="#" class="nav-link">Welcome Guest</a>
                 </li>
-                <li class="nav-item"></li>
-                <a href="./users_section/user_login.php" class="nav-link">Login</a>
-                </li>
+                <?php
+                if(!isset($_SESSION['username'])){
+                    echo "<li class='nav-item'></li>
+                    <a href='./users_section/user_login.php' class='nav-link'>Login</a>
+                    </li>";
+                }
+                else{
+                    echo "<li class='nav-item'></li>
+                    <a href='logout.php' class='nav-link'>Logout</a>
+                    </li>";
+                }
+                ?>
             </ul>
         </nav>
 
