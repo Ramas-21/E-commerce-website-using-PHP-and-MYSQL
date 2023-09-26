@@ -61,6 +61,11 @@ session_start();
                     <a href='#' class='nav-link'>Logout</a>
                     </li>";
                 }
+                else{
+                    echo "<li class='nav-item'></li>
+                    <a href='#' class='nav-link'>Logout</a>
+                    </li>";
+                }
                 ?>
                 <li class="nav-item"></li>
                 <a href="#" class="nav-link">Login</a>
