@@ -55,6 +55,11 @@ session_start();
                 <li class="nav-item">
                     <a href="#" class="nav-link">Welcome Guest</a>
                 </li>
+                <?php
+                if(!isset($_SESSION['username'])){
+                    
+                }
+                ?>
                 <li class="nav-item"></li>
                 <a href="#" class="nav-link">Login</a>
                 </li>
