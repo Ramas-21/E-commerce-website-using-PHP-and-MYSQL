@@ -1,5 +1,6 @@
 <?php
 include('../includes/connect.php');
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -73,10 +74,9 @@ include('../includes/connect.php');
                 <div class="row">
                     <?php
                     // using sessions
-                    if(!isset($_SESSION['username'])){
+                    if (!isset($_SESSION['username'])) {
                         include('user_login.php');
-                    }
-                    else{
+                    } else {
                         include('payment.php');
                     }
                     ?>
