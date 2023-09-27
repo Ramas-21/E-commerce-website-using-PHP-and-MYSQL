@@ -69,9 +69,6 @@ session_start();
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
             <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Welcome Guest</a>
-                </li>
                 <?php
                 if (!isset($_SESSION['username'])) {
                     echo "<li class='nav-item'></li>
@@ -82,7 +79,7 @@ session_start();
                     <a href='logout.php' class='nav-link'>Logout</a>
                     </li>";
                 }
-                
+
                 if (!isset($_SESSION['username'])) {
                     echo "<li class='nav-item'></li>
                     <a href='./users_section/user_login.php' class='nav-link'>Login</a>
