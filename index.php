@@ -76,7 +76,7 @@ session_start();
                 </li>";
                 } else {
                     echo "<li class='nav-item'></li>
-                    <a href='logout.php' class='nav-link'>Logout</a>
+                    <a href='#' class='nav-link'>Welcome ".$_SESSION['username']."</a>
                     </li>";
                 }
 
